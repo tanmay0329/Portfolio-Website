@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2b1055, #7597de);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            max-width: 700px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-shadow: 0 0 10px #f73487, 0 0 20px #f73487, 0 0 40px #f73487;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            animation: slideUp 2.5s ease-in-out;
+        }
+
+        .heart {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #f73487;
+            transform: rotate(-45deg);
+            animation: pulse 1.5s infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #f73487;
+            border-radius: 50%;
+        }
+
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 50px;
+            top: 0;
+        }
+
+        .heart.top-left {
+            top: 50px;
+            left: 50px;
+        }
+
+        .heart.bottom-right {
+            bottom: 50px;
+            right: 50px;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #f73487;
+            background: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        button:hover {
+            background: #f73487;
+            color: white;
+            box-shadow: 0 0 15px #f73487;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(-45deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You!</h1>
+        <p>Thank you for considering me! I bring creativity, passion, and skills that align perfectly with your needs. I am excited to contribute to your team.</p>
+        <button onclick="alert('Let’s build something amazing together!')">Hire Me</button>
+    </div>
+
+    <!-- First Heart (Top-Left) -->
+    <div class="heart top-left"></div>
+
+    <!-- Second Heart (Bottom-Right) -->
+    <div class="heart bottom-right"></div>
+</body>
+</html>
