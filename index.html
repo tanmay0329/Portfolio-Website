@@ -29,7 +29,7 @@
       #thankYouMessage {
         display: none;
         position: absolute;
-        top: 755px; /* Shift the thank you message a bit up */
+        top: 700px; /* Shift the thank you message a bit up */
         left: 0; /* Shift more to the left */
         transform: translate(0, 0);
         background: rgba(255, 255, 255); /* White background */
@@ -39,7 +39,7 @@
         z-index: 1000;
         text-align: center;
         color: black;
-        font-size: 0.7em; /* Reduce size */
+        font-size: 0.8em; /* Reduce size */
         width: 409px; /* Make it vertical */
       }
       .intro {
@@ -49,38 +49,7 @@
         white-space: nowrap; /* Ensure "Tanmay Bora" stays on a single line */
       }
       .heart {
-        position: fixed; /* Change to fixed to position relative to the body */
-        width: 100px;
-        height: 100px;
-        background: #f73487;
-        transform: rotate(-45deg);
-        animation: pulse 1.5s infinite;
-        display: none; /* Initially hide the hearts */
-      }
-      .heart:before,
-      .heart:after {
-        content: "";
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        background: #f73487;
-        border-radius: 50%;
-      }
-      .heart:before {
-        top: -50px;
-        left: 0;
-      }
-      .heart:after {
-        left: 50px;
-        top: 0;
-      }
-      .heart.top-left {
-        top: 50px;
-        left: 50px;
-      }
-      .heart.bottom-right {
-        bottom: 50px;
-        right: 50px;
+        display: none; /* Hide the heart elements */
       }
       @keyframes pulse {
         0%, 100% {
@@ -151,8 +120,6 @@
           <h1>Thank You!</h1>
           <p>Thank you for considering me! I bring creativity, passion, and skills that align perfectly with your needs. I am excited to contribute to your team.</p>
         </div>
-        <div class="heart top-left"></div>
-        <div class="heart bottom-right"></div>
       </div>
       <br />
       <br />
@@ -205,7 +172,7 @@
               </h3>
             </div>
             <p class="small-para">
-              Developed a fully automated system streamline hospital-patient
+              Developed a fully automatedsystem streamline hospital-patient
               communication. Helped rural peoples as it gives subtitles in
               hindi, cantakeappointment online or offline also can see the
               reviews of doctors and pay accordingly. Our unique features
@@ -299,6 +266,9 @@
                   a +ve learning environment. Coordinated with peers to address academic 
                   challenges and enhance overall class performance. Collaborated with event 
                   committees to ensure active participation in college-wide initiatives.
+                  <br />
+                  <br />
+                  <br />
                 </p>
               </div>
             </div>
@@ -342,7 +312,6 @@
                   yields, and reduce labor costs. The proposed system has the
                   potential to revolutionize farm management, promoting
                   sustainable agricultural practices.
-                </p>
               </div>
             </div>
           </div>
@@ -506,16 +475,13 @@
     <script>
       const hireMeBtn = document.getElementById("hireMeBtn");
       const thankYouMessage = document.getElementById("thankYouMessage");
-      const hearts = document.querySelectorAll('.heart');
 
       hireMeBtn.addEventListener("mouseover", function () {
         thankYouMessage.style.display = "block";
-        hearts.forEach(heart => heart.style.display = "block");
       });
 
       hireMeBtn.addEventListener("mouseout", function () {
         thankYouMessage.style.display = "none";
-        hearts.forEach(heart => heart.style.display = "none");
       });
     </script>
   </body>
