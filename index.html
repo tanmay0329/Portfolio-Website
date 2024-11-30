@@ -14,6 +14,85 @@
     <link rel="stylesheet" href="web.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <style>
+      #thankYouIframe {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 1);
+      }
+      #thankYouMessage {
+        display: none;
+        position: absolute;
+        top: 690px; /* Shift the thank you message a bit up */
+        left: 0; /* Shift more to the left */
+        transform: translate(0, 0);
+        background: rgba(255, 255, 255); /* White background */
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        text-align: center;
+        color: black;
+        font-size: 0.8em; /* Reduce size */
+        width: 409px; /* Make it vertical */
+      }
+      .intro {
+        margin-top: -100px; /* Move the intro section a bit up */
+      }
+      .logo-heading {
+        white-space: nowrap; /* Ensure "Tanmay Bora" stays on a single line */
+      }
+      .heart {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: #f73487;
+        transform: rotate(-45deg);
+        animation: pulse 1.5s infinite;
+      }
+      .heart:before,
+      .heart:after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: #f73487;
+        border-radius: 50%;
+      }
+      .heart:before {
+        top: -50px;
+        left: 0;
+      }
+      .heart:after {
+        left: 50px;
+        top: 0;
+      }
+      .heart.top-left {
+        top: 50px;
+        left: 50px;
+      }
+      .heart.bottom-right {
+        bottom: 50px;
+        right: 50px;
+      }
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1) rotate(-45deg);
+        }
+        50% {
+          transform: scale(1.2) rotate(-45deg);
+        }
+      }
+      .my-heading {
+        white-space: nowrap;
+      }
+    </style>
   </head>
 
   <body>
@@ -45,7 +124,7 @@
 
     <!-- Main hero banner -->
     <section id="home" class="hero">
-      <div class="intro">
+      <div class="intro" style="margin-top: -50px">
         <div class="headings">
           <img
             src="Tanmay Bora.png"
@@ -55,7 +134,7 @@
           <h3 class="greet-heading" style="color: black">Hello, I'm</h3>
           <h1 class="my-heading">Tanmay Bora</h1>
           <h4 class="sub-heading">
-            Currently Pursuing Computer Science And Engineer Specilization in AI Course at VIT, Pune in 3rd year.
+            Currently Persuing Computer Science And Engineer Specilization in AI Course at VIT, Pune in 3rd year.
           </h4>
         </div>
         <div class="intro-buttons">
@@ -66,6 +145,11 @@
           >
             <button class="btn ghost-btn">Get Resume</button>
           </a>
+        </div>
+        <iframe id="thankYouIframe" src="thankyou.html"></iframe>
+        <div id="thankYouMessage">
+          <h1>Thank You!</h1>
+          <p>Thank you for considering me! I bring creativity, passion, and skills that align perfectly with your needs. I am excited to contribute to your team.</p>
         </div>
       </div>
       <br />
@@ -106,7 +190,7 @@
               bursts. Created a portal for real-time communication.
               Integratedsensorstomonitor and report environmental conditions.
               This all things were connected using a web application
-              withadminaccess only.
+              with admin access only.
             </p>
           </div>
           <div class="block">
@@ -119,12 +203,12 @@
               </h3>
             </div>
             <p class="small-para">
-              Developed a fully automated system streamline hospital-patient
+              Developed a fully automatedsystem streamline hospital-patient
               communication. Helped rural peoples as it gives subtitles in
-              hindi, can take appointment online or offline also can see the
+              hindi, cantakeappointment online or offline also can see the
               reviews of doctors and pay accordingly. Our unique features
-              werewasit compares medicine and has gesture understanding for dumb
-              peoples. We are trying to add a table which will move from one point
+              were was it compares medicine and has gesture understanding for dumb
+              peoples. We are trying to add a table whichwill movefrom one point
               to another avoiding obstacles autonomously can be used in
               emergency conditions.
             </p>
@@ -142,7 +226,7 @@
               The goal of this project was to predict the chances of fire to be
               cached in the forest using parameters such as temperature,
               moisture, humidity, etc. Taking these parameters, we trained a
-              model then we can install sensors in the locationinwhich we have
+              model then we can install sensors in the location in which we have
               to predict the chances of fire to be caught.
             </p>
           </div>
@@ -208,7 +292,7 @@
               <h3 class="greet-heading blue-text">Class Representative</h3>
               <div class="white-box">
                 <p class="small-para">
-                  Elected by peers to represent the class in discussions with
+                  Represent the class in discussions with
                   faculty, administration and being a liaison between student
                   and faculties communicating concerns, feedback, and
                   suggestions. Organized class meetings and facilitated
@@ -310,7 +394,7 @@
             <br />
             <div class="contact-item">
               <i class="fas fa-globe contact-icon"></i>
-              <p class="contact-text">https://tanmay0329.github.io/Portfolio/</p>
+              <p class="contact-text">www.tanmay-bora.com</p>
             </div>
             <br />
             <div class="contact-item">
@@ -415,7 +499,12 @@
         </div>
       </div>
     </footer>
-
+    <div id="thankYouMessage">
+      <h1>Thank You!</h1>
+      <p>Thank you for considering me! I bring creativity, passion, and skills that align perfectly with your needs. I am excited to contribute to your team.</p>
+      <!-- <div class="heart top-left"></div>
+      <div class="heart bottom-right"></div> -->
+    </div>
     <script src="script.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
@@ -424,11 +513,20 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      document
-        .getElementById("hireMeBtn")
-        .addEventListener("click", function () {
-          window.location.href = "thankyou.html";
-        });
+      const hireMeBtn = document.getElementById("hireMeBtn");
+      const thankYouIframe = document.getElementById("thankYouIframe");
+      const thankYouMessage = document.getElementById("thankYouMessage");
+
+      hireMeBtn.addEventListener("mouseover", function () {
+        thankYouIframe.style.display = "block";
+        thankYouIframe.contentWindow.document.querySelector("p").style.color = "black";
+        thankYouMessage.style.display = "block";
+      });
+
+      hireMeBtn.addEventListener("mouseout", function () {
+        thankYouIframe.style.display = "none";
+        thankYouMessage.style.display = "none";
+      });
     </script>
   </body>
 </html>
