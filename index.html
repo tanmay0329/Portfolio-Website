@@ -49,12 +49,13 @@
         white-space: nowrap; /* Ensure "Tanmay Bora" stays on a single line */
       }
       .heart {
-        position: absolute;
+        position: fixed; /* Change to fixed to position relative to the body */
         width: 100px;
         height: 100px;
         background: #f73487;
         transform: rotate(-45deg);
         animation: pulse 1.5s infinite;
+        display: none; /* Initially hide the hearts */
       }
       .heart:before,
       .heart:after {
@@ -146,11 +147,12 @@
             <button class="btn ghost-btn">Get Resume</button>
           </a>
         </div>
-        <iframe id="thankYouIframe" src="thankyou.html"></iframe>
         <div id="thankYouMessage">
           <h1>Thank You!</h1>
           <p>Thank you for considering me! I bring creativity, passion, and skills that align perfectly with your needs. I am excited to contribute to your team.</p>
         </div>
+        <div class="heart top-left"></div>
+        <div class="heart bottom-right"></div>
       </div>
       <br />
       <br />
@@ -502,8 +504,8 @@
     <div id="thankYouMessage">
       <h1>Thank You!</h1>
       <p>Thank you for considering me! I bring creativity, passion, and skills that align perfectly with your needs. I am excited to contribute to your team.</p>
-      <!-- <div class="heart top-left"></div>
-      <div class="heart bottom-right"></div> -->
+      <div class="heart top-left"></div>
+      <div class="heart bottom-right"></div>
     </div>
     <script src="script.js"></script>
     <script
@@ -514,18 +516,17 @@
     ></script>
     <script>
       const hireMeBtn = document.getElementById("hireMeBtn");
-      const thankYouIframe = document.getElementById("thankYouIframe");
       const thankYouMessage = document.getElementById("thankYouMessage");
+      const hearts = document.querySelectorAll('.heart');
 
       hireMeBtn.addEventListener("mouseover", function () {
-        thankYouIframe.style.display = "block";
-        thankYouIframe.contentWindow.document.querySelector("p").style.color = "black";
         thankYouMessage.style.display = "block";
+        hearts.forEach(heart => heart.style.display = "block");
       });
 
       hireMeBtn.addEventListener("mouseout", function () {
-        thankYouIframe.style.display = "none";
         thankYouMessage.style.display = "none";
+        hearts.forEach(heart => heart.style.display = "none");
       });
     </script>
   </body>
