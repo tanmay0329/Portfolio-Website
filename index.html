@@ -29,7 +29,7 @@
       #thankYouMessage {
         display: none;
         position: absolute;
-        top: 720px; /* Shift the thank you message a bit up */
+        top: 700px; /* Shift the thank you message a bit up */
         left: 0; /* Shift more to the left */
         transform: translate(0, 0);
         background: rgba(255, 255, 255); /* White background */
@@ -39,11 +39,11 @@
         z-index: 1000;
         text-align: center;
         color: black;
-        font-size: 0.7em; /* Reduce size */
+        font-size: 0.8em; /* Reduce size */
         width: 409px; /* Make it vertical */
       }
       .intro {
-        margin-top: -100px; /* Move the intro section a bit up */
+        margin-top: 0 px; /* Move the intro section a bit up */
       }
       .logo-heading {
         white-space: nowrap; /* Ensure "Tanmay Bora" stays on a single line */
@@ -94,21 +94,25 @@
 
     <!-- Main hero banner -->
     <section id="home" class="hero">
-      <div class="intro" style="margin-top: -50px">
+      <div class="intro" >
         <div class="headings">
           <img
             src="Tanmay Bora.png"
             alt="Your Image"
-            style="max-width: 300px; height: 300px; margin-bottom: 20px"
-          />
-          <h3 class="greet-heading" style="color: black">Hello, I'm</h3>
+            style="max-width: 300px; height: 400px; margin-bottom: 20px"
+          
+          <h3 class="greet-heading" style="color: black">Hello, Myself</h3>
           <h1 class="my-heading">Tanmay Bora</h1>
           <h4 class="sub-heading">
             Currently Persuing Computer Science And Engineer Specilization in AI Course at VIT, Pune in 3rd year.
           </h4>
         </div>
         <div class="intro-buttons">
-          <button class="btn common-btn" id="hireMeBtn">Hire Me</button>
+          <form id="hireMeForm" action="http://localhost:3000/send-email" method="POST" style="display: inline;">
+            <input type="hidden" name="subject" value="You're Hired!">
+            <input type="hidden" name="body" value="Congratulations, you have been hired!">
+          
+          </form>
           <a
             href="https://drive.google.com/file/d/12UQWmJn_3Z2h4CrvsNmReOfW7JisyUT3/view?usp=sharing"
             target="_blank"
@@ -116,93 +120,104 @@
             <button class="btn ghost-btn">Get Resume</button>
           </a>
         </div>
-        <div id="thankYouMessage">
-          <h1>Thank You!</h1>
-          <p>Thank you for considering me! I bring creativity, passion, and skills that align perfectly with your needs. I am excited to contribute to your team.</p>
-        </div>
       </div>
       <br />
       <br />
       <div class="projects-section curved-container">
         <h1 class="my-heading text-center" style="margin-top: 40px">
-          SEMESTER PROJECTS
+          PROJECTS
         </h1>
-        <div class="blocks" style="margin-top: 40px">
+        <div class="blocks-grid">
           <div class="block">
             <div class="icon-title">
               <div class="icon">
                 <i class="fas fa-smile"></i>
               </div>
               <h3 class="greet-heading blue-text text-center">
-                IOT Based Custom Obejct Sorting System
+                IOT Based Custom Object Sorting System
               </h3>
             </div>
+            <div class="block-divider"></div>
             <p class="small-para">
-              Developed an automated conveyer belt system with integrated camera
-              for detection of objects to sort and a flap-based sorting
-              mechanism. Enabled precise separation of desired objects from the
-              rest for efficient processing.
+              Developed an automated conveyor belt system with integrated camera for detection of objects to sort and a flap-based sorting mechanism. Enabled precise separation of desired objects from the rest for efficient processing.
             </p>
           </div>
           <div class="block">
             <div class="icon-title">
-              <div class="icon">
-                <a href="https://github.com/tanmay0329/Cloud-Computing-Computer-Network-CP" target="_blank" class="icon-link">
-                 <i class="fas fa-rocket"></i>
-                </a>
-              </div>
+              <a href="https://github.com/tanmay0329/Cloud-Computing-Computer-Network-CP">
+                <div class="icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+              </a>
               <h3 class="greet-heading blue-text text-center">
                 Early Warning System for Glacial Lake Outburst Floods
               </h3>
             </div>
+            <div class="block-divider"></div>
             <p class="small-para">
-              Developed a custom model for lake detection using pyTorch with a
-              accuracy around 60%, we can lower the water in that lakes before it
-              bursts. Created a portal for real-time communication.
-              Integrated sensors to monitor and report environmental conditions.
-              This all things were connected using a web application
-              with admin access only.
+              Developed a custom model for lake detection using PyTorch with ~60% accuracy, enabling preemptive water lowering. Created a portal for real-time communication and integrated sensors for environmental monitoring, all managed via a secure web app.
             </p>
           </div>
           <div class="block">
             <div class="icon-title">
-              <div class="icon">
-                <a href="https://github.com/tanmay0329/MEDILINEA-Connecting-Dcotors-Patients" target="_blank" class="icon-link">
+              <a href="https://github.com/tanmay0329/MEDILINEA-Connecting-Dcotors-Patients">
+                <div class="icon">
                   <i class="fas fa-star"></i>
-                </a>
-              </div>
+                </div>
+              </a>
               <h3 class="greet-heading blue-text text-center">
-                MEDILINIA (Connecting Doctors and Patients)
+                Connecting Doctors and Patients
               </h3>
             </div>
+            <div class="block-divider"></div>
             <p class="small-para">
-              Developed a fully automated system streamline hospital-patient
-              communication. Helped rural peoples as it gives subtitles in
-              hindi, cantakeappointment online or offline also can see the
-              reviews of doctors and pay accordingly. Our unique features
-              were was it compares medicine and has gesture understanding for dumb
-              peoples. We are trying to add a table whichwill movefrom one point
-              to another avoiding obstacles autonomously can be used in
-              emergency conditions.
+              Automated hospital-patient communication platform with Hindi subtitles, online/offline appointments, doctor reviews, medicine comparison, and gesture understanding for accessibility. Includes an autonomous table for emergencies.
             </p>
           </div>
           <div class="block">
             <div class="icon-title">
-              <div class="icon">
-                <a href="https://github.com/tanmay0329/Forest-Fire-Detection-ML" target="_blank" class="icon-link">
-                  <i class="fas fa-laptop-code"></i>
-                </a>
-              </div>
+              <a href="https://github.com/tanmay0329/Forest-Fire-Detection-ML">
+                  <div class="icon">
+                    <i class="fas fa-tree"></i>
+                  </div>
+              </a>
               <h3 class="greet-heading blue-text text-center">
                 Forest Fire Forecasting (Mitigating Environmental Hazards)
               </h3>
             </div>
+            <div class="block-divider"></div>
             <p class="small-para">
-              The goal of this project was to predict the chances of fire to be
-              cached in the forest using parameters such as temperature,
-              moisture, humidity, etc. Taking these parameters, we trained a
-              model then we can install sensors in the location in which we have
-              to predict the chances of fire to be caught.
+              Predicted forest fire risk using temperature, moisture, and humidity sensors. Trained a model and deployed sensors for real-time fire risk assessment and early warning.
+            </p>
+          </div>
+          <div class="block">
+            <div class="icon-title">
+              <div class="icon">
+                <i class="fas fa-drone"></i>
+              </div>
+              <h3 class="greet-heading blue-text text-center">
+                Drone-based Intelligent AET & Water Sensing Irrigation System
+              </h3>
+            </div>
+            <div class="block-divider"></div>
+            <p class="small-para">
+              Used drone-mounted sensors to collect real-time soil/environmental data for irrigation. Machine learning predicts optimal crops; deep learning detects anomalies. Full-stack web app for monitoring. Potential impact: 40M+ farmers worldwide.
+            </p>
+          </div>
+          <div class="block">
+            <div class="icon-title">
+              <a href="https://github.com/pranav8doshi/Tender_details_extraction">
+                <div class="icon">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+              </a>
+              <h3 class="greet-heading blue-text text-center">
+                Text Extraction & Data Parsing on Invoices and Tenders
+              </h3>
+            </div>
+            <div class="block-divider"></div>
+            <p class="small-para">
+              Secure web tool using Tesseract OCR & Regex to extract financial data from scanned invoices. JWT authentication, role-based access, Pandas for parsing, SQL for storage. Reduced manual entry by 8 hours/week, sped up processing by 60%.
             </p>
           </div>
         </div>
@@ -213,9 +228,10 @@
     <!-- Services Section -->
     <section class="services" id="achievements">
       <div class="services-heading" style="margin-top: 20px">
-        <h1 class="my-heading text-center">MY ACHIEVEMENTS</h1>
+        <h1 class="my-heading achievements-heading text-center">My ACHIEVEMENTS</h1>
       </div>
       <div class="services-content">
+        <!-- First row: 4 cards -->
         <div class="my-row">
           <div class="my-col">
             <div class="my-card">
@@ -249,7 +265,7 @@
               <h3 class="greet-heading blue-text">Campus Ambassador at IMUN</h3>
               <div class="white-box">
                 <p class="small-para">
-                  As a Campus Ambassador for IMUN, I represented the
+                  As a Campus Ambassador for IMUN, I represent the
                   organization on my campus through social media. My role
                   includes driving student engagement, increasing participation
                   in IMUN events, and managing outreach to raise awareness about
@@ -275,15 +291,13 @@
                   acting as a bridge to communicate concerns, feedback, and suggestions. 
                   Organized class meetings, facilitated discussions on academic and 
                   extracurricular topics, and resolved conflicts making 
-                  a +ve learning environment. Coordinated to solve academic 
+                  a +ve learning environment. Coordinated with peers to address academic 
                   challenges and enhance overall class performance. Collaborated with event 
                   committees to ensure active participation in college-wide initiatives.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="my-row">
           <div class="my-col">
             <div class="my-card">
               <div class="icon">
@@ -291,40 +305,42 @@
                   <i class="fas fa-quote-left"></i>
                 </a>
               </div>
-              <h3 class="greet-heading blue-text">Robocon 2024</h3>
+              <h3 class="greet-heading blue-text">DD - ROBOCON 2024</h3>
               <div class="white-box">
                 <p class="small-para">
-                  Worked on fully autonomous robot consisting of two cameras and
-                  a 2D lidar connected through ROS nodes on jetson xavier. In
-                  computer Vision I made a model from scratch using pyTorch
-                  deployed through yolov5 on jetson which was game changing
-                  in image processing for Balls Detection. Lidar integration
-                  was strategically used to save the coordinates of the baskets.
+                  Worked on fully autonomous robot consisting of <b>two cameras</b> and
+                  a <b>2D lidar</b> connected through <b>ROS nodes</b> on <b>jetson xavier</b>. In
+                  computer Vision I made a model from scratch using <b>pyTorch</b>
+                  deployed through <b>yolov5</b> on jetson which was game changing
+                  in image processing for <b>Balls Detection</b>. Lidar integration
+                  was strategically used to save the <b>coordinates of the baskets</b>.
                   Through camera it would come to know which basket to
-                  choose for the best condition and put the ball accurately
-                  in the basket through lidar.
+                  choose for the <b>best condition</b> and put the ball accurately
+                  in the basket through <b>lidar</b>.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+        <!-- Second row: 4 cards -->
+        <div class="my-row">
           <div class="my-col">
             <div class="my-card">
               <div class="icon">
                 <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781032644752-102/farm-automation-using-nodemcu-vikas-nandeshwar-ishawar-borade-atharva-borade-atharva-bonde-tanmay-bora-om-bobade-vishal-bokare" target="_blank" class="icon-link">
-                  <i class="fas fa-robot"></i>
+                  <i class="fab fa-wordpress-simple"></i>
                 </a>
               </div>
               <h3 class="greet-heading blue-text">PUBLICATIONS</h3>
               <div class="white-box">
                 <p class="small-para">
-                  Our paper, "Farm Automation Using Node MCU," presented at
-                  ICABEC 2023 and published in the Advances in AI for Biomedical
-                  Instrumentation, Electronics, and Computing book, explores the
-                  use of Node MCU to automate farm irrigation. This low-cost
-                  technology aims to improve water efficiency, enhance crop
+                  Our paper, <b>"Farm Automation Using Node MCU,"</b> presented at
+                  <b>ICABEC 2023</b> and published in the <b>Advances in AI for Biomedical
+                  Instrumentation, Electronics, and Computing book</b>, explores the
+                  use of Node MCU to automate farm irrigation. This <b>low-cost
+                  technology</b> aims to improve water efficiency, enhance crop
                   yields, and reduce labor costs. The proposed system has the
-                  potential to revolutionize farm management, promoting
-                  sustainable agricultural practices.
+                  potential to <b>revolutionize modern farm management, promoting efficient and sustainable agricultural practices</b>.
               </div>
             </div>
           </div>
@@ -332,22 +348,51 @@
             <div class="my-card">
               <div class="icon">
                 <a href="https://ieeexplore.ieee.org/document/10675176" target="_blank" class="icon-link">
-                  <i class="fas fa-tree"></i>
+                  <i class="fas fa-video"></i>
                 </a>
               </div>
               <h3 class="greet-heading blue-text">PUBLICATIONS</h3>
               <div class="white-box">
                 <p class="small-para">
-                  Our research paper, "Machine Learning-Based Forest Fire
-                  Forecasting: Mitigating Environmental Hazards," was published
-                  in IEEE Xplore and presented at ICSPCRE-2024. The study uses
+                  Our research paper, <b>"Machine Learning-Based Forest Fire
+                  Forecasting: Mitigating Environmental Hazards,"</b> was published
+                  in <b>IEEE Xplore</b> and presented at <b>ICSPCRE-2024</b>. The study uses
                   machine learning to forecast forest fires based on FWI factors
-                  like wind speed, rain, humidity, moisture, and temperature. This
-                  system helps provide early warnings, enabling timely
-                  preventive measures to save lives, property damage, and 
-                  preserve biodiversity.
+                  like <b>wind speed, rain, humidity, moisture, and temperature</b>. This system helps provide <b>early warnings, enabling timely and effective preventive measures to save lives, reduce property damage, and preserve vital biodiversity</b>
                   <br>
                   <br>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <a href="https://www.linkedin.com/posts/tanmay-bora_robocon-2025-activity-7352959023094161409-n39-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECDjlsBxf_JmnpEHr1A1oV9rWdR_Nps5UA" target="_blank" class="icon-link">
+                  <i class="fas fa-robot"></i>
+                </a>
+              </div>
+              <h3 class="greet-heading blue-text">DD - ROBOCON 2025</h3>
+              <div class="white-box">
+                <p class="small-para">
+                  Secured <b>AIR 3</b> among <b>100 teams</b> in India after year of rigorous design, development, and testing. The robot’s exceptional performance earned us the <b>2nd Runner-up Trophy</b>, along with the prestigious <b>MATLAB Matworks Modelling Award</b> for our innovative simulation and modelling techniques. We were also honored with the <b>IHFC Robotics and AI Award</b> for integrating <b>Augmented Reality (AR)</b> on the robot to accurately measure <b>distances for RPM and angles for alignment</b> in real time, improving precision and efficiency.
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <a href="https://www.linkedin.com/posts/tanmay-bora_the-group-and-memories-activity-7312415656052764672-Z9To?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECDjlsBxf_JmnpEHr1A1oV9rWdR_Nps5UA" target="_blank" class="icon-link">
+                  <i class="fas fa-book"></i>
+                </a>
+              </div>
+              <h3 class="greet-heading blue-text">PUBLICATIONS</h3>
+              <div class="white-box">
+                <p class="small-para">
+                  Our research paper, <b>“IoT Based Intelligent Object Sorting System using YOLO”</b>, is now published and was presented at the <b>2nd International Conference on Computational Research and Data Analytics (ICCRDA-2025)</b>, organized by <b>Duy Tan University, Vietnam</b>, on January 17-18, 2025 (Online). The study shows our model enables <b>accurate real‑time</b> classification with <b>minimal latency</b>, demonstrating robust performance across varying <b>lighting and backgrounds</b> in industrial automation and smart logistics settings.
                 </p>
               </div>
             </div>
@@ -375,7 +420,7 @@
             <br />
             <div class="contact-item">
               <i class="fas fa-globe contact-icon"></i>
-              <p class="contact-text">https://tanmay0329.github.io/Portfolio-Website/</p>
+              <p class="contact-text">www.tanmay-bora.com</p>
             </div>
             <br />
             <div class="contact-item">
