@@ -1,4 +1,4 @@
-/* Styles defined for the desktop or the bigger screen devices*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
@@ -9,7 +9,6 @@ body {
     background: #e0f7ff;
 }
 
-/* Header Navbar Styles */
 .navbar {
     display: flex;
     align-items: center;
@@ -59,7 +58,6 @@ body {
     }
 }
 
-/* Main Hero Section Styles */
 .hero {
     background: #e0f7ff;
     min-height: 100vh;
@@ -79,7 +77,7 @@ body {
     text-align: center;
     width: 100%;
     max-width: 420px;
-    margin: 40px auto 0 auto; /* Add top margin to shift intro down */
+    margin: 40px auto 0 auto; 
     background: transparent;
     box-shadow: none;
     border-radius: 0;
@@ -100,7 +98,6 @@ body {
     object-fit: cover;
 }
 
-/* Responsive adjustments for mobile */
 @media (max-width: 900px) {
     .hero {
         flex-direction: column;
@@ -117,7 +114,6 @@ body {
     }
 }
 
-/* About section styles */
 .about {
     display: flex;
     align-items: center;
@@ -138,7 +134,6 @@ body {
     padding: 5rem 5rem 5rem 1rem;
 }
 
-/* Portfolio section styles */
 .portfolio {
     margin: 4.8rem 0;
     padding: 0 5rem;
@@ -161,7 +156,6 @@ body {
     border-top-left-radius: 20px;
 }
 
-/* Services section styles */
 .services {
     display: flex;
     align-items: center;
@@ -179,7 +173,7 @@ body {
 }
 
 .my-col {
-  flex: 1 1 22%; /* 4 cards per row with spacing */
+  flex: 1 1 22%; 
   max-width: 22%;
   min-width: 220px;
   box-sizing: border-box;
@@ -223,7 +217,6 @@ body {
     color: #fff;
 }
 
-/* Contact section styles */
 .contact {
     padding: 0 5rem;
 }
@@ -241,16 +234,21 @@ body {
 .contact-form {
     display: flex;
     flex-direction: column;
+    align-items: center;      
+    justify-content: center;
 }
 
 .contact-form .form-controls {
     width: 80%;
-    padding: 10px 0;
-    margin: 1.67rem 0;
+    max-width: 340px;
+    margin: 12px 0;
+    text-align: center;   
 }
 
 .contact-form .form-btn {
     width: 83%;
+    max-width: 340px;
+    margin-top: 10px;
 }
 
 .contact-details {
@@ -310,7 +308,7 @@ body {
     font-size: 18px;
     color: #fff;
     margin: 0;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
 }
 
 .contact-form {
@@ -340,7 +338,6 @@ body {
     background-color: #2980b9;
 }
 
-/* Footer Styles */
 .footer {
     background-color: #000;
     color: #fff;
@@ -379,7 +376,6 @@ body {
     list-style: none;
 }
 
-/* Projects section styles */
 .projects-section {
   background: linear-gradient(45deg, #363D73, #2794B3);
   padding: 120px 0 60px 0;
@@ -457,7 +453,7 @@ body {
 .block h3 {
   margin: 0;
   font-size: 1.08rem;
-  color: #2794B3; /* Use the same blue as Achievements headings */
+  color: #2794B3; 
   font-weight: 600;
   flex: 1;
   text-align: left;
@@ -465,7 +461,6 @@ body {
 }
 
 .block p {
-  color: #000; /* Black font for project content */
   font-size: 0.98rem;
   margin-top: 10px;
   text-align: left;
@@ -481,7 +476,6 @@ body {
   margin: 10px 0 16px 0;
 }
 
-/* Responsive: Mobile First */
 @media (max-width: 900px) {
   .blocks-grid {
     grid-template-columns: 1fr;
@@ -520,7 +514,6 @@ body {
   }
 }
 
-/* Projects Section Heading */
 .projects-section h1.my-heading {
   color: #232946;
   font-size: 2.1rem;
@@ -547,13 +540,12 @@ body {
   white-space: normal;
 }
 
-/* Achievements Section Heading */
 .achievements-heading {
   color: #232946;
   font-size: 2.3rem;
   font-weight: 800;
   letter-spacing: 1.5px;
-  margin: 8px auto 64px auto; /* Reduced bottom margin for a balanced space */
+  margin: 8px auto 64px auto; 
   background: #fff;
   display: block;
   width: 95vw;
@@ -585,7 +577,6 @@ body {
   }
 }
 
-/* Optional: Add a subtle fade-in animation */
 .block {
   opacity: 0;
   animation: fadeInUp 0.7s ease forwards;
@@ -602,7 +593,6 @@ body {
   to { opacity: 1; transform: translateY(0);}
 }
 
-/* utility classes */
 .greet-heading {
     font-size: 1.3rem;
     font-weight: 400;
@@ -702,12 +692,12 @@ body {
     border-radius: 10px;
     padding: 20px;
     margin-top: 10px;
-    color: #000; /* Change font color to black */
+    color: #000; 
 }
 
 .white-box p {
     margin-bottom: 0;
-    color: #000; /* Change font color to black */
+    color: #000; 
 }
 
 .achievements-heading {
@@ -715,7 +705,7 @@ body {
   font-size: 2.3rem;
   font-weight: 800;
   letter-spacing: 1.5px;
-  margin: 8px auto 64px auto; /* Reduced bottom margin for a balanced space */
+  margin: 8px auto 64px auto; 
   background: #fff;
   display: block;
   width: 95vw;
@@ -760,4 +750,41 @@ body {
     box-sizing: border-box;
     max-width: 100%;
 }
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  .services-content {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    justify-items: center;
+  }
+  .my-row, .my-col {
+    display: contents !important;
+    flex: unset !important;
+    max-width: unset !important;
+    min-width: unset !important;
+    margin-bottom: 0 !important;
+  }
+
+  .services-content > .my-col:nth-last-child(2):first-child,
+  .services-content > .my-col:nth-last-child(2):nth-child(odd) {
+    grid-column: 2 / span 1;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .services-content {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .my-row, .my-col {
+    display: contents !important;
+    flex: unset !important;
+    max-width: unset !important;
+    min-width: unset !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 
