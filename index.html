@@ -29,27 +29,27 @@
       #thankYouMessage {
         display: none;
         position: absolute;
-        top: 700px; /* Shift the thank you message a bit up */
-        left: 0; /* Shift more to the left */
+        top: 700px;
+        left: 0;
         transform: translate(0, 0);
-        background: rgba(255, 255, 255); /* White background */
+        background: rgba(255, 255, 255);
         padding: 10px;
         border-radius: 10px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         z-index: 1000;
         text-align: center;
         color: black;
-        font-size: 0.8em; /* Reduce size */
-        width: 409px; /* Make it vertical */
+        font-size: 0.8em;
+        width: 409px;
       }
       .intro {
-        margin-top: 0 px; /* Move the intro section a bit up */
+        margin-top: 0 px;
       }
       .logo-heading {
-        white-space: nowrap; /* Ensure "Tanmay Bora" stays on a single line */
+        white-space: nowrap;
       }
       .heart {
-        display: none; /* Hide the heart elements */
+        display: none;
       }
       @keyframes pulse {
         0%, 100% {
@@ -64,9 +64,7 @@
       }
     </style>
   </head>
-
   <body>
-    <!-- Navbar header section -->
     <header class="header">
       <nav class="navbar">
         <div class="logo">
@@ -91,8 +89,6 @@
         </div>
       </nav>
     </header>
-
-    <!-- Main hero banner -->
     <section id="home" class="hero">
       <div class="intro" >
         <div class="headings">
@@ -100,18 +96,18 @@
             src="Tanmay Bora.png"
             alt="Your Image"
             style="max-width: 300px; height: 400px; margin-bottom: 20px"
-          
+          >
           <h3 class="greet-heading" style="color: black">Hello, Myself</h3>
           <h1 class="my-heading">Tanmay Bora</h1>
-          <h4 class="sub-heading">
-            Currently Persuing Computer Science And Engineer Specilization in AI Course at VIT, Pune in 3rd year.
+          <h4 class="sub-heading" style="color: black">
+            Currently Persuing Computer Science And Engineer Specilization in AI Course at VIT, Pune in Final year.
+            I am a passionate learner and innovator at the intersection of technology, sustainability, and leadership. I have published research papers, contributed to open-source projects, Campus Ambassador and led award-winning robotics teams at Robocon, achieving AIR 3 in 2025 and AIR 6 in 2024 with multiple national awards. As a Department Representative at VIT’s “VishwaKarandak,” I honed leadership and event management skills while actively participating in hackathons, internships, and certifications to grow as a team player and problem-solver.
           </h4>
         </div>
         <div class="intro-buttons">
           <form id="hireMeForm" action="http://localhost:3000/send-email" method="POST" style="display: inline;">
             <input type="hidden" name="subject" value="You're Hired!">
             <input type="hidden" name="body" value="Congratulations, you have been hired!">
-          
           </form>
           <a
             href="https://drive.google.com/file/d/12UQWmJn_3Z2h4CrvsNmReOfW7JisyUT3/view?usp=sharing"
@@ -225,13 +221,11 @@
     </section>
     <br />
     <br />
-    <!-- Services Section -->
     <section class="services" id="achievements">
       <div class="services-heading" style="margin-top: 20px">
         <h1 class="my-heading achievements-heading text-center">My ACHIEVEMENTS</h1>
       </div>
       <div class="services-content">
-        <!-- First row: 4 cards -->
         <div class="my-row">
           <div class="my-col">
             <div class="my-card">
@@ -322,7 +316,6 @@
             </div>
           </div>
         </div>
-        <!-- Second row: 4 cards -->
         <div class="my-row">
           <div class="my-col">
             <div class="my-card">
@@ -377,7 +370,6 @@
               <div class="white-box">
                 <p class="small-para">
                   Secured <b>AIR 3</b> among <b>100 teams</b> in India after year of rigorous design, development, and testing. The robot’s exceptional performance earned us the <b>2nd Runner-up Trophy</b>, along with the prestigious <b>MATLAB Matworks Modelling Award</b> for our innovative simulation and modelling techniques. We were also honored with the <b>IHFC Robotics and AI Award</b> for integrating <b>Augmented Reality (AR)</b> on the robot to accurately measure <b>distances for RPM and angles for alignment</b> in real time, improving precision and efficiency.
-                  
                 </p>
               </div>
             </div>
@@ -400,8 +392,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Contact Me Section -->
     <section class="contact" id="contact">
       <div class="contact-container">
         <div class="contact-heading-container" style="text-align: center">
@@ -472,8 +462,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Footer section -->
     <footer class="footer">
       <div class="footer-content text-center">
         <h4>
