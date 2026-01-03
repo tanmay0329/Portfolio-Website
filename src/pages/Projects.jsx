@@ -33,7 +33,7 @@ const projectsData = [
     title: 'Drone-based Intelligent AET & Water Sensing Irrigation System',
     description:
       'Used drone-mounted sensors to collect real-time soil/environmental data for irrigation. Machine learning predicts optimal crops; deep learning detects anomalies. Full-stack web app for monitoring. Potential impact: 40M+ farmers worldwide.',
-    icon: 'fas fa-drone',
+    icon: 'fas fa-helicopter',
     link: null,
   },
   {

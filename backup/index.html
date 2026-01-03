@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="web.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <style>
+      #thankYouIframe {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 1);
+      }
+      #thankYouMessage {
+        display: none;
+        position: absolute;
+        top: 700px;
+        left: 0;
+        transform: translate(0, 0);
+        background: rgba(255, 255, 255);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        text-align: center;
+        color: black;
+        font-size: 0.8em;
+        width: 409px;
+      }
+      .intro {
+        margin-top: 0 px;
+      }
+      .logo-heading {
+        white-space: nowrap;
+      }
+      .heart {
+        display: none;
+      }
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1) rotate(-45deg);
+        }
+        50% {
+          transform: scale(1.2) rotate(-45deg);
+        }
+      }
+      .my-heading {
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <h2 class="logo-heading">Tanmay Bora</h2>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars hamburger-icon"></i>
+          <i class="fas fa-times cross-icon"></i>
+        </div>
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-list-items">
+              <a class="links" href="#home">Home</a>
+            </li>
+            <li class="menu-list-items">
+              <a class="links" href="#achievements">Achievements</a>
+            </li>
+            <li class="menu-list-items">
+              <a class="links" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="home" class="hero">
+      <div class="intro" >
+        <div class="headings">
+          <img
+            src="Tanmay Bora.jpeg"
+            alt="Your Image"
+            style="max-width: 300px; height: 400px; margin-bottom: 20px"
+          >
+          <h3 class="greet-heading" style="color: black">Hello, Myself</h3>
+          <h1 class="my-heading">Tanmay Bora</h1>
+          <h4 class="sub-heading" style="color: black">
+            Currently Persuing Computer Science And Engineer Specilization in AI Course at VIT, Pune in Final year.
+            I am a passionate learner and innovator at the intersection of technology, sustainability, and leadership. I have published research papers, contributed to open-source projects, Campus Ambassador and led award-winning robotics teams at Robocon, achieving AIR 3 in 2025 and AIR 6 in 2024 with multiple national awards. As a Department Representative at VIT’s “VishwaKarandak,” I honed leadership and event management skills while actively participating in hackathons, internships, and certifications to grow as a team player and problem-solver.
+          </h4>
+        </div>
+        <div class="intro-buttons">
+          <form id="hireMeForm" action="http://localhost:3000/send-email" method="POST" style="display: inline;">
+            <input type="hidden" name="subject" value="You're Hired!">
+            <input type="hidden" name="body" value="Congratulations, you have been hired!">
+          </form>
+          <a
+            href="https://drive.google.com/file/d/12UQWmJn_3Z2h4CrvsNmReOfW7JisyUT3/view?usp=sharing"
+            target="_blank"
+          >
+            <button class="btn ghost-btn">Get Resume</button>
+          </a>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="projects-section curved-container">
+        <h1 class="my-heading text-center" style="margin-top: 40px">
+          PROJECTS
+        </h1>
+        <div class="blocks-grid">
+          <div class="block">
+            <div class="icon-title">
+              <div class="icon">
+                <i class="fas fa-smile"></i>
+              </div>
+              <h3 class="greet-heading blue-text text-center">
+                IOT Based Custom Object Sorting System
+              </h3>
+            </div>
+            <div class="block-divider"></div>
+            <p class="small-para">
+              Developed an automated conveyor belt system with integrated camera for detection of objects to sort and a flap-based sorting mechanism. Enabled precise separation of desired objects from the rest for efficient processing.
+            </p>
+          </div>
+          <div class="block">
+            <div class="icon-title">
+              <a href="https://github.com/tanmay0329/Cloud-Computing-Computer-Network-CP">
+                <div class="icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+              </a>
+              <h3 class="greet-heading blue-text text-center">
+                Early Warning System for Glacial Lake Outburst Floods
+              </h3>
+            </div>
+            <div class="block-divider"></div>
+            <p class="small-para">
+              Developed a custom model for lake detection using PyTorch with ~60% accuracy, enabling preemptive water lowering. Created a portal for real-time communication and integrated sensors for environmental monitoring, all managed via a secure web app.
+            </p>
+          </div>
+          <div class="block">
+            <div class="icon-title">
+              <a href="https://github.com/tanmay0329/MEDILINEA-Connecting-Dcotors-Patients">
+                <div class="icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+              <h3 class="greet-heading blue-text text-center">
+                Connecting Doctors and Patients
+              </h3>
+            </div>
+            <div class="block-divider"></div>
+            <p class="small-para">
+              Automated hospital-patient communication platform with Hindi subtitles, online/offline appointments, doctor reviews, medicine comparison, and gesture understanding for accessibility. Includes an autonomous table for emergencies.
+            </p>
+          </div>
+          <div class="block">
+            <div class="icon-title">
+              <a href="https://github.com/tanmay0329/Forest-Fire-Detection-ML">
+                  <div class="icon">
+                    <i class="fas fa-tree"></i>
+                  </div>
+              </a>
+              <h3 class="greet-heading blue-text text-center">
+                Forest Fire Forecasting (Mitigating Environmental Hazards)
+              </h3>
+            </div>
+            <div class="block-divider"></div>
+            <p class="small-para">
+              Predicted forest fire risk using temperature, moisture, and humidity sensors. Trained a model and deployed sensors for real-time fire risk assessment and early warning.
+            </p>
+          </div>
+          <div class="block">
+            <div class="icon-title">
+              <div class="icon">
+                <i class="fas fa-drone"></i>
+              </div>
+              <h3 class="greet-heading blue-text text-center">
+                Drone-based Intelligent AET & Water Sensing Irrigation System
+              </h3>
+            </div>
+            <div class="block-divider"></div>
+            <p class="small-para">
+              Used drone-mounted sensors to collect real-time soil/environmental data for irrigation. Machine learning predicts optimal crops; deep learning detects anomalies. Full-stack web app for monitoring. Potential impact: 40M+ farmers worldwide.
+            </p>
+          </div>
+          <div class="block">
+            <div class="icon-title">
+              <a href="https://github.com/pranav8doshi/Tender_details_extraction">
+                <div class="icon">
+                  <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+              </a>
+              <h3 class="greet-heading blue-text text-center">
+                Text Extraction & Data Parsing on Invoices and Tenders
+              </h3>
+            </div>
+            <div class="block-divider"></div>
+            <p class="small-para">
+              Secure web tool using Tesseract OCR & Regex to extract financial data from scanned invoices. JWT authentication, role-based access, Pandas for parsing, SQL for storage. Reduced manual entry by 8 hours/week, sped up processing by 60%.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <section class="services" id="achievements">
+      <div class="services-heading" style="margin-top: 20px">
+        <h1 class="my-heading achievements-heading text-center">My ACHIEVEMENTS</h1>
+      </div>
+      <div class="services-content">
+        <div class="my-row">
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <a href="https://www.linkedin.com/posts/tanmay-bora_vishwakarandak24-vitpune-csai-activity-7179893062800707584-OULR?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon-link">
+                  <i class="fas fa-paint-brush"></i>
+                </a>
+              </div>
+              <h3 class="greet-heading blue-text">Department Representative</h3>
+              <div class="white-box">
+                <p class="small-para">
+                  Department Representative (CSAI) at VishwaKarandak, E-Cell,
+                  VIT Pune Represented my Department in VishwaKarandak, VIT’s
+                  flagship event, showcasing diverse talents and skills.
+                  Led a team of students, fostering collaboration and creativity.
+                  Played a key role in promoting the event within the department,
+                  resulting in high participation and engagement. Managed the 
+                  official Instagram page for the event in collabration with the
+                  interested students.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <a href="https://www.linkedin.com/posts/tanmay-bora_internationalmun-mun-imun-activity-7260615325589651457-ukvP?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon-link">
+                  <i class="fa-solid fa-code"></i>
+                </a>
+              </div>
+              <h3 class="greet-heading blue-text">Campus Ambassador at IMUN</h3>
+              <div class="white-box">
+                <p class="small-para">
+                  As a Campus Ambassador for IMUN, I represent the
+                  organization on my campus through social media. My role
+                  includes driving student engagement, increasing participation
+                  in IMUN events, and managing outreach to raise awareness about
+                  Model United Nations. I assist with event coordination,
+                  communication with delegates, and sharing registration and
+                  event details. By doing so, I helped to enhance IMUN's visibility 
+                  and impact locally.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <a href="https://www.linkedin.com/posts/tanmay-bora_innovation-technology-recognition-activity-7244020241498857472-N1oM?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon-link">
+                  <i class="fas fa-chart-line"></i>
+                </a>
+              </div>
+              <h3 class="greet-heading blue-text">Class Representative</h3>
+              <div class="white-box">
+                <p class="small-para">
+                  Represented the class in discussions with faculty and administration, 
+                  acting as a bridge to communicate concerns, feedback, and suggestions. 
+                  Organized class meetings, facilitated discussions on academic and 
+                  extracurricular topics, and resolved conflicts making 
+                  a +ve learning environment. Coordinated with peers to address academic 
+                  challenges and enhance overall class performance. Collaborated with event 
+                  committees to ensure active participation in college-wide initiatives.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <a href="https://github.com/tanmay0329/Robocon24-Balls-Detection-Pytorch-" target="_blank" class="icon-link">
+                  <i class="fas fa-quote-left"></i>
+                </a>
+              </div>
+              <h3 class="greet-heading blue-text">DD - ROBOCON 2024</h3>
+              <div class="white-box">
+                <p class="small-para">
+                  Worked on fully autonomous robot consisting of <b>two cameras</b> and
+                  a <b>2D lidar</b> connected through <b>ROS nodes</b> on <b>jetson xavier</b>. In
+                  computer Vision I made a model from scratch using <b>pyTorch</b>
+                  deployed through <b>yolov5</b> on jetson which was game changing
+                  in image processing for <b>Balls Detection</b>. Lidar integration
+                  was strategically used to save the <b>coordinates of the baskets</b>.
+                  Through camera it would come to know which basket to
+                  choose for the <b>best condition</b> and put the ball accurately
+                  in the basket through <b>lidar</b>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-row">
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781032644752-102/farm-automation-using-nodemcu-vikas-nandeshwar-ishawar-borade-atharva-borade-atharva-bonde-tanmay-bora-om-bobade-vishal-bokare" target="_blank" class="icon-link">
+                  <i class="fab fa-wordpress-simple"></i>
+                </a>
+              </div>
+              <h3 class="greet-heading blue-text">PUBLICATIONS</h3>
+              <div class="white-box">
+                <p class="small-para">
+                  Our paper, <b>"Farm Automation Using Node MCU,"</b> presented at
+                  <b>ICABEC 2023</b> and published in the <b>Advances in AI for Biomedical
+                  Instrumentation, Electronics, and Computing book</b>, explores the
+                  use of Node MCU to automate farm irrigation. This <b>low-cost
+                  technology</b> aims to improve water efficiency, enhance crop
+                  yields, and reduce labor costs. The proposed system has the
+                  potential to <b>revolutionize modern farm management, promoting efficient and sustainable agricultural practices</b>.
+              </div>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <a href="https://ieeexplore.ieee.org/document/10675176" target="_blank" class="icon-link">
+                  <i class="fas fa-video"></i>
+                </a>
+              </div>
+              <h3 class="greet-heading blue-text">PUBLICATIONS</h3>
+              <div class="white-box">
+                <p class="small-para">
+                  Our research paper, <b>"Machine Learning-Based Forest Fire
+                  Forecasting: Mitigating Environmental Hazards,"</b> was published
+                  in <b>IEEE Xplore</b> and presented at <b>ICSPCRE-2024</b>. The study uses
+                  machine learning to forecast forest fires based on FWI factors
+                  like <b>wind speed, rain, humidity, moisture, and temperature</b>. This system helps provide <b>early warnings, enabling timely and effective preventive measures to save lives, reduce property damage, and preserve vital biodiversity</b>
+                  <br>
+                  <br>
+                  <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <a href="https://www.linkedin.com/posts/tanmay-bora_robocon-2025-activity-7352959023094161409-n39-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECDjlsBxf_JmnpEHr1A1oV9rWdR_Nps5UA" target="_blank" class="icon-link">
+                  <i class="fas fa-robot"></i>
+                </a>
+              </div>
+              <h3 class="greet-heading blue-text">DD - ROBOCON 2025</h3>
+              <div class="white-box">
+                <p class="small-para">
+                  Secured <b>AIR 3</b> among <b>100 teams</b> in India after year of rigorous design, development, and testing. The robot’s exceptional performance earned us the <b>2nd Runner-up Trophy</b>, along with the prestigious <b>MATLAB Matworks Modelling Award</b> for our innovative simulation and modelling techniques. We were also honored with the <b>IHFC Robotics and AI Award</b> for integrating <b>Augmented Reality (AR)</b> on the robot to accurately measure <b>distances for RPM and angles for alignment</b> in real time, improving precision and efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="my-col">
+            <div class="my-card">
+              <div class="icon">
+                <a href="https://www.linkedin.com/posts/tanmay-bora_the-group-and-memories-activity-7312415656052764672-Z9To?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECDjlsBxf_JmnpEHr1A1oV9rWdR_Nps5UA" target="_blank" class="icon-link">
+                  <i class="fas fa-book"></i>
+                </a>
+              </div>
+              <h3 class="greet-heading blue-text">PUBLICATIONS</h3>
+              <div class="white-box">
+                <p class="small-para">
+                  Our research paper, <b>“IoT Based Intelligent Object Sorting System using YOLO”</b>, is now published and was presented at the <b>2nd International Conference on Computational Research and Data Analytics (ICCRDA-2025)</b>, organized by <b>Duy Tan University, Vietnam</b>, on January 17-18, 2025 (Online). The study shows our model enables <b>accurate real‑time</b> classification with <b>minimal latency</b>, demonstrating robust performance across varying <b>lighting and backgrounds</b> in industrial automation and smart logistics settings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <div class="contact-heading-container" style="text-align: center">
+          <h1 class="contact-heading">&nbsp;&nbsp;&nbsp;&nbsp;CONTACT ME</h1>
+          <h1 class="greet-heading" style="font-size: 2em">
+            Get In Touch
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </h1>
+        </div>
+        <div class="contact-content">
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-phone contact-icon"></i>
+              <p class="contact-text">+91 9404889632</p>
+            </div>
+            <br />
+            <div class="contact-item">
+              <i class="fas fa-globe contact-icon"></i>
+              <p class="contact-text">www.tanmay-bora.com</p>
+            </div>
+            <br />
+            <div class="contact-item">
+              <i class="fas fa-envelope contact-icon"></i>
+              <p class="contact-text">tanmay.bora221@vit.edu</p>
+            </div>
+            <br />
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <div class="contact-text">
+                <p>Pune, Maharashtra</p>
+                <p>Chinatamani Nagar, Bibewadi</p>
+                <p>Near Chintamani Ganesh Mandir</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <form class="contact-form">
+              <input
+                class="form-controls"
+                type="text"
+                placeholder="Your Name"
+              />
+              <input
+                class="form-controls"
+                type="text"
+                placeholder="Your Email"
+              />
+              <input
+                class="form-controls"
+                type="text"
+                placeholder="Your Phone"
+              />
+              <textarea
+                class="form-controls"
+                placeholder="Write your message"
+                name="message"
+                id=""
+                cols="30"
+                rows="4"
+              ></textarea>
+              <input
+                class="form-btn btn common-btn"
+                type="submit"
+                value="Send Message"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content text-center">
+        <h4>
+          Copyright © 2025 All rights reserved | This portfolio website template
+          is created by Tanmay bora.
+        </h4>
+        <div class="social-links">
+          <div class="footer-menu">
+            <ul class="footer-menu-list">
+              <li class="footer-list-items">
+                <a
+                  class="footer-links"
+                  href="https://www.facebook.com/profile.php?id=61565031476448&mibextid=ZbWKwL"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="footer-list-items">
+                <a class="footer-links" href="https://github.com/tanmay0329">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li class="footer-list-items">
+                <a
+                  class="footer-links"
+                  href="https://www.instagram.com/_tanmay_bora_"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="footer-list-items">
+                <a
+                  class="footer-links"
+                  href="https://www.linkedin.com/in/tanmay-bora"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="footer-list-items">
+                <a
+                  class="footer-links"
+                  href="https://leetcode.com/tan_may29"
+                >
+                  <i class="fas fa-code"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const hireMeBtn = document.getElementById("hireMeBtn");
+      const thankYouMessage = document.getElementById("thankYouMessage");
+
+      hireMeBtn.addEventListener("mouseover", function () {
+        thankYouMessage.style.display = "block";
+      });
+
+      hireMeBtn.addEventListener("mouseout", function () {
+        thankYouMessage.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
