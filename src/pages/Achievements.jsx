@@ -111,6 +111,8 @@ const achievementsData = [
           early warnings, enabling timely and effective preventive measures to
           save lives, reduce property damage, and preserve vital biodiversity
         </b>
+        <br />
+        
       </>
     ),
   },
