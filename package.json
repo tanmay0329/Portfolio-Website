@@ -2,6 +2,7 @@
   "name": "temp_app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://tanmay0329.github.io/Portfolio-Website/",
   "type": "module",
   "scripts": {
     "dev": "vite",
