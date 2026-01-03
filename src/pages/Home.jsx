@@ -33,7 +33,7 @@ const Home = () => {
           </div>
           <div className="hero-image-container">
             <img
-              src="/Tanmay Bora.jpeg"
+              src="/Portfolio-Website/Tanmay Bora.jpeg"
               alt="Tanmay Bora"
               className="hero-img"
             />
@@ -65,7 +65,7 @@ const Home = () => {
               <h4 className="stat-title">LinkedIn</h4>
               <a href="https://www.linkedin.com/in/tanmay-bora" target="_blank" rel="noreferrer">
                 <img 
-                  src="/Linkedin.jpeg" 
+                  src="/Portfolio-Website/Linkedin.jpeg" 
                   alt="LinkedIn Profile" 
                   className="stat-card"
                 />
