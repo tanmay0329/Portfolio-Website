@@ -9,7 +9,7 @@ import Achievements from './pages/Achievements';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio-Website">
       <Header />
       <main>
         <Routes>
