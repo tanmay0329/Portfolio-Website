@@ -1,0 +1,20 @@
+{
+    "name": "Tanmay Bora Portfolio",
+    "short_name": "Tanmay Bora",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0d1117",
+    "icons": [
+        {
+            "src": "/logo.jpeg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "/logo.jpeg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ]
+}
