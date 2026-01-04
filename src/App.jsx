@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -9,7 +9,7 @@ import Achievements from './pages/Achievements';
 
 function App() {
   return (
-    <Router basename="/Portfolio-Website">
+    <Router>
       <Header />
       <main>
         <Routes>

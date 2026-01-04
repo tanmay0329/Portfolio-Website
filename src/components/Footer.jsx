@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const socialLinks = [
   {
@@ -54,20 +55,31 @@ const Footer = () => {
             <h3 className="col-heading">Quick Links</h3>
             <ul className="footer-links-list">
               <li>
-                <div onClick={() => window.scrollTo(0, 0)}>
-                  <a href="/" style={{ pointerEvents: 'none' }}>
-                    Home
-                  </a>
-                </div>
+                <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="/projects">Projects</a>
+                <Link to="/projects">Projects</Link>
               </li>
               <li>
-                <a href="/achievements">Achievements</a>
+                <Link to="/achievements">Achievements</Link>
               </li>
               <li>
-                <a href="#contact">Contact Me</a>
+                <span 
+                  onClick={() => {
+                    const contactSection = document.getElementById('contact');
+                    if (contactSection) {
+                      contactSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  style={{ cursor: 'pointer', color: '#8b949e', transition: 'all 0.2s ease' }}
+                  className="footer-link-contact"
+                  onMouseEnter={(e) => { e.target.style.color = '#2794B3'; e.target.style.transform = 'translateX(5px)'; }}
+                  onMouseLeave={(e) => { e.target.style.color = '#8b949e'; e.target.style.transform = 'translateX(0)'; }}
+                >
+                  Contact Me
+                </span>
               </li>
             </ul>
           </div>

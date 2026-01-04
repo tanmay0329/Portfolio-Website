@@ -53,13 +53,19 @@ const Header = () => {
               </NavLink>
             </li>
             <li className="menu-list-items">
-              <a 
-                href="#contact" 
+              <span 
                 className="links" 
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  const contactSection = document.getElementById('contact');
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                style={{ cursor: 'pointer' }}
               >
                 Contact Me
-              </a>
+              </span>
             </li>
           </ul>
         </div>
