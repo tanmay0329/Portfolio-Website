@@ -7,13 +7,14 @@ const achievementsData = [
     icon: 'fas fa-paint-brush',
     description: (
       <>
-        Department Representative (CSAI) at VishwaKarandak, E-Cell, VIT Pune.
-        Represented my Department in VishwaKarandak, VIT’s flagship event,
-        showcasing diverse talents and skills. Led a team of students,
-        fostering collaboration and creativity. Played a key role in promoting
-        the event within the department, resulting in high participation and
-        engagement. Managed the official Instagram page for the event in
-        collibration with the interested students.
+        <b>Department Representative (CSAI)</b> at <b>VishwaKarandak</b>,{' '}
+        <b>E-Cell, VIT Pune</b>. Represented my Department in{' '}
+        <b>VishwaKarandak</b>, VIT’s flagship event, showcasing diverse talents
+        and skills. <b>Led a team</b> of students, fostering collaboration and
+        creativity. Played a key role in <b>promoting the event</b> within the
+        department, resulting in <b>high participation</b> and moment. Managed
+        the <b>official Instagram page</b> for the event in collaboration with
+        the interested students.
       </>
     ),
   },
@@ -23,13 +24,14 @@ const achievementsData = [
     icon: 'fa-solid fa-code',
     description: (
       <>
-        As a Campus Ambassador for IMUN, I represent the organization on my
-        campus through social media. My role includes driving student
-        engagement, increasing participation in IMUN events, and managing
-        outreach to raise awareness about Model United Nations. I assist with
-        event coordination, communication with delegates, and sharing
-        registration and event details. By doing so, I helped to enhance IMUN's
-        visibility and impact locally.
+        As a <b>Campus Ambassador for IMUN</b>, I represent the organization on
+        my campus through social media. My role includes{' '}
+        <b>driving student engagement</b>, <b>increasing participation</b> in
+        IMUN events, and <b>managing outreach</b> to raise awareness about{' '}
+        <b>Model United Nations</b>. I assist with <b>event coordination</b>,
+        communication with delegates, and sharing registration and event
+        details. By doing so, I helped to <b>enhance IMUN's visibility</b> and
+        impact locally.
       </>
     ),
   },
@@ -39,13 +41,14 @@ const achievementsData = [
     icon: 'fas fa-chart-line',
     description: (
       <>
-        Represented the class in discussions with faculty and administration,
-        acting as a bridge to communicate concerns, feedback, and suggestions.
-        Organized class meetings, facilitated discussions on academic and
-        extracurricular topics, and resolved conflicts making a +ve learning
-        environment. Coordinated with peers to address academic challenges and
-        enhance overall class performance. Collaborated with event committees
-        to ensure active participation in college-wide initiatives.
+        <b>Represented the class</b> in discussions with faculty and
+        administration, acting as a <b>bridge</b> to communicate concerns,
+        feedback, and suggestions. <b>Organized class meetings</b>, facilitated
+        discussions on academic and extracurricular topics, and{' '}
+        <b>resolved conflicts</b> making a <b>+ve learning environment</b>.{' '}
+        <b>Coordinated with peers</b> to address academic challenges and{' '}
+        <b>enhance overall class performance</b>. <b>Collaborated</b> with event
+        committees to ensure active participation in college-wide initiatives.
       </>
     ),
   },
@@ -154,6 +157,92 @@ const achievementsData = [
         demonstrating robust performance across varying{' '}
         <b>lighting and backgrounds</b> in industrial automation and smart
         logistics settings.
+      </>
+    ),
+  },
+  {
+    title: 'Featured in MathWorks Student Lounge 2025',
+    link: 'https://blogs.mathworks.com/student-lounge/2025/12/15/dd-robocon-india-2025-mathworks-modeling-award-from-simulation-to-the-real-world-with-bracts-vit-pune/',
+    icon: 'fas fa-newspaper',
+    description: (
+      <>
+        I was featured in the <b>MathWorks Student Lounge (Dec 15, 2025)</b> for
+        my work with <b>Team BRACT at DD ROBOCON India 2025</b>, where we won
+        the <b>MathWorks Modeling Award</b>. I led the{' '}
+        <b>perception and simulation-to-hardware pipeline</b> using{' '}
+        <b>Simulink/Simscape</b>,{' '}
+        <b>Computer Vision and Deep Learning Toolboxes</b>, and <b>ROS</b>,
+        enabling a reliable transfer from simulation to the competition floor
+        and demonstrating the practical impact of combining{' '}
+        <b>model-based engineering with modern ML workflows</b>.
+      </>
+    ),
+  },
+
+  {
+    title: (
+      <>
+        Patent Filed <br /> RT-IRAS
+      </>
+    ),
+    link: '#',
+    icon: 'fas fa-lightbulb',
+    description: (
+      <>
+        I am a co-inventor of{' '}
+        <b>
+          “Real-Time Intelligent Teaching Reference Augmentation System
+          (RT-IRAS)”
+        </b>
+        , an <b>AI-based system</b> that autonomously augments live classroom
+        lectures by transcribing speech, extracting{' '}
+        <b>domain-specific keywords</b>, and generating{' '}
+        <b>context-aware explanations and visuals
+          <br/>
+          </b> in real time. The system
+        combines <b>accent-aware speech recognition</b>, <b>NLP</b>, a{' '}
+        <b>self-learning database</b>, and <b>generative AI</b> to enhance
+        teaching efficiency without interrupting lecture flow.
+      </>
+    ),
+  },
+  {
+    title: 'Internal Smart India Hackathon Winner 2024',
+    link: 'https://github.com/tanmay0329/Cloud-Computing-Computer-Network-CP',
+    icon: 'fas fa-trophy',
+    description: (
+      <>
+        We won the <b>Internal Smart India Hackathon (ISIH 2024)</b> with our{' '}
+        <b>
+          Cloud-Based Early Warning System for Glacial Lake Outburst Floods
+          (GLOFs)
+        </b>
+        , an <b>AI-driven disaster management solution</b> integrating{' '}
+        <b>IoT sensors</b>, <b>satellite imagery</b>,{' '}
+        <b>deep-learning models</b>, and <b>cloud infrastructure</b>. The system
+        enables <b>real-time monitoring</b> and <b>predictive analytics</b> for{' '}
+        <b>early flood warnings</b>, demonstrating the practical application of{' '}
+        <b>AI</b>, <b>cloud computing</b>, and <b>robotics</b> for large-scale
+        environmental risk mitigation.
+      </>
+    ),
+  },
+  {
+    title: 'AIbotics Hackathon Winner 2024',
+    link: 'https://www.linkedin.com/posts/vishwakarma-institute-of-technology-pune_proudvitian-hackathon2024-innovationinaction-activity-7295027403213447168-_1JY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECDjlsBxf_JmnpEHr1A1oV9rWdR_Nps5UA',
+    icon: 'fas fa-trophy',
+    description: (
+      <>
+        We won the <b>AIbotics Hackathon</b> for building a{' '}
+        <b>drone-assisted smart irrigation and crop intelligence system</b>{' '}
+        using <b>Raspberry Pi–based sensor nodes</b> to collect{' '}
+        <b>real-time soil and environmental data</b>. <b>Machine learning models</b>{' '}
+        trained on historical agricultural data recommended <b>optimal crops</b>{' '}
+        for specific conditions, while <b>deep learning</b> detected{' '}
+        <b>irrigation and environmental anomalies</b> for early intervention. A{' '}
+        <b>full-stack web dashboard</b> enabled{' '}
+        <b>real-time monitoring and analytics</b>, demonstrating a{' '}
+        <b>scalable precision-agriculture solution</b> 
       </>
     ),
   },
