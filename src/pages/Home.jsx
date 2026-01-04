@@ -19,7 +19,7 @@ const Home = () => {
             </p>
             <div className="btn-group">
               <a
-                href="https://drive.google.com/file/d/12UQWmJn_3Z2h4CrvsNmReOfW7JisyUT3/view?usp=sharing"
+                href="https://drive.google.com/file/d/102rjfMxtAzbANc1jgJ-iAIV2WVK-CRp6/view?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
                 className="primary-btn"
