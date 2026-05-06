@@ -125,7 +125,7 @@ const WebSolutions = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 md:gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 sm:gap-8 md:gap-12 lg:gap-16">
           {webProjects.map((project, idx) => (
             <motion.div
               key={idx}
