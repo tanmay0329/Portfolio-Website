@@ -47,10 +47,12 @@ import {
   SiFastapi,
   SiGraphql,
   SiCplusplus,
-  SiTypescript
+  SiTypescript,
+  SiIbm,
+  SiGoogle
 } from "react-icons/si";
 
-import { education, projects, achievements, socialLinks } from "../portfolio";
+import { education, projects, achievements, socialLinks, certifications } from "../portfolio";
 
 const About = () => {
   const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.1 });
@@ -511,6 +513,46 @@ const About = () => {
                   );
                 })}
               </div>
+
+              {/* Professional Certifications - Compact */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: 0.7 }}
+                className="mt-4 p-4 glass-strong rounded-2xl border border-white/5 overflow-hidden"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="h-1.5 w-1.5 rounded-full bg-purple-500 animate-pulse" />
+                  <span className="text-[10px] uppercase tracking-[0.2em] font-black text-gray-400">Professional Certifications</span>
+                </div>
+                
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  {certifications.map((cert, i) => (
+                    <motion.a
+                      key={i}
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.02, y: -2 }}
+                      className="group flex flex-col p-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-purple-500/30 hover:bg-purple-500/5 transition-all duration-300"
+                    >
+                      <div className="flex items-center justify-between mb-1.5">
+                        <div className="text-lg">
+                          {cert.issuer === "IBM" ? (
+                            <SiIbm className="text-blue-400 group-hover:text-blue-300 transition-colors" />
+                          ) : (
+                            <SiGoogle className="text-red-400 group-hover:text-red-300 transition-colors" />
+                          )}
+                        </div>
+                        <FaExternalLinkAlt size={8} className="text-white/20 group-hover:text-purple-400 transition-colors" />
+                      </div>
+                      <p className="text-[10px] font-bold text-gray-300 leading-tight group-hover:text-white transition-colors line-clamp-2">
+                        {cert.title}
+                      </p>
+                    </motion.a>
+                  ))}
+                </div>
+              </motion.div>
 
               {/* Additional Tech Stack Badge */}
               <motion.div

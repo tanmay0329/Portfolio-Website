@@ -33,7 +33,7 @@ export const achievements = [
   {
     title: "Patent Filed: RT-IRAS",
     description: "Co-inventor of 'Real-Time Intelligent Teaching Reference Augmentation System', an AI-based system for autonomous lecture augmentation using GenAI, NLP, and accent-aware speech recognition.",
-    link: "#",
+    link: "https://www.linkedin.com/posts/tanmay-bora_patentpublished-aiineducation-edtech-share-7429783608854450176-eY40?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECDjlsBxf_JmnpEHr1A1oV9rWdR_Nps5UA",
     icon: "lightbulb",
     date: "2025"
   },
@@ -163,6 +163,29 @@ export const socialLinks = {
   instagram: "https://www.instagram.com/_tanmay_bora_"
 };
 
+export const certifications = [
+  {
+    title: "IBM Deep Learning Professional",
+    issuer: "IBM",
+    link: "https://www.linkedin.com/posts/tanmay-bora_ibm-deep-learning-with-pytorch-keras-and-activity-7359803131070676992-nKmk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECDjlsBxf_JmnpEHr1A1oV9rWdR_Nps5UA"
+  },
+  {
+    title: "IBM Full Stack Developer",
+    issuer: "IBM",
+    link: "https://www.linkedin.com/posts/tanmay-bora_ibm-full-stack-software-developer-certificate-activity-7320417986291335172-H8A1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECDjlsBxf_JmnpEHr1A1oV9rWdR_Nps5UA"
+  },
+  {
+    title: "IBM Data Analytics Professional",
+    issuer: "IBM",
+    link: "https://www.linkedin.com/posts/tanmay-bora_ibm-data-analytics-professional-certificate-activity-7289335717804072961-y4bh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECDjlsBxf_JmnpEHr1A1oV9rWdR_Nps5UA"
+  },
+  {
+    title: "Google Cybersecurity Professional",
+    issuer: "Google",
+    link: "https://www.linkedin.com/posts/tanmay-bora_completion-certificate-for-google-cybersecurity-activity-7285906222237540352-Njq4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECDjlsBxf_JmnpEHr1A1oV9rWdR_Nps5UA"
+  }
+];
+
 export const webProjects = [
   {
     title: "Service Provider Shop",
@@ -206,11 +229,11 @@ export const webProjects = [
   },
   {
     title: "Internal E-commerce",
-    desc: "Currently developing a high-performance headless commerce solution within a startup. Focused on maximum conversion and ultra-fast edge delivery. Launching soon.",
+    desc: "Developing a high-performance headless commerce solution as a part-time (hobby) project with PraiseArray (my startup). Focused on maximum conversion, ultra-fast edge delivery, and scalable microservices. Launching soon.",
     icon: "🛍️",
     link: "#",
     trail: ["/assets/ecommerce_dashboard.webp", "/assets/ecommerce_dashboard.webp", "/assets/ecommerce_dashboard.webp"],
     status: "LAUNCHING SOON",
-    features: ["Headless Commerce", "AEO & GEO", "Edge Performance"]
+    features: ["Headless Commerce", "ppraise collab", "Edge Performance"]
   }
 ];
