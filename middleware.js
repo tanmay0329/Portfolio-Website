@@ -1,19 +1,24 @@
 /**
- * Advanced AI SEO Middleware for Vercel (Vite/React)
- * Intercepts requests to provide LLM-friendly Markdown content
- * if requested via the 'Accept' header.
+ * Standard Vercel Edge Middleware (Vite/React Compatible)
+ * Fixed to avoid 500 errors by using standard Web API Response.
  */
-export default function middleware(request) {
-  const acceptHeader = request.headers.get('accept') || '';
+export default async function middleware(request) {
+  const accept = request.headers.get('accept') || '';
   const url = new URL(request.url);
 
-  // If the requester explicitly asks for Markdown (AI Bots / LLM Crawlers like GPTBot, Perplexity)
-  if (acceptHeader.includes('text/markdown')) {
-    // Rewrite the URL to point to our semantic markdown version
-    url.pathname = '/portfolio.md';
-    return Response.rewrite(url);
+  // Only run logic for the root path to avoid interfering with assets
+  if (url.pathname === '/' && accept.includes('text/markdown')) {
+    // Manually fetch and return the markdown content
+    const markdownUrl = new URL('/portfolio.md', request.url);
+    const response = await fetch(markdownUrl);
+    
+    // Return a new response with the markdown content but correct content-type
+    return new Response(response.body, {
+      headers: {
+        'content-type': 'text/markdown; charset=utf-8',
+      },
+    });
   }
 
-  // Otherwise, continue to the standard response
-  return Response.next();
+  // Returning nothing continues the request to the static site
 }
