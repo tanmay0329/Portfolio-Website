@@ -13,8 +13,37 @@ import {
   FaGlobe,
   FaArrowRight,
   FaBrain,
+  FaAws,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaPython,
+  FaNodeJs,
+  FaReact,
+  FaGitAlt,
+  FaTerminal,
+  FaServer,
+  FaFlask,
+  FaEye,
+  FaBolt,
+  FaLeaf,
+  FaJira,
+  FaCalculator
 } from "react-icons/fa";
-import { SiTensorflow, SiFastapi, SiMongodb, SiDocker } from "react-icons/si";
+import { 
+  SiPytorch, 
+  SiTensorflow, 
+  SiYolo, 
+  SiLangchain,
+  SiOpencv,
+  SiDocker,
+  SiAmazonaws,
+  SiMysql,
+  SiJira,
+  SiSelenium,
+  SiRos,
+  SiFlask
+} from "react-icons/si";
 
 import { education, projects, skills, achievements, socialLinks } from "../portfolio";
 
@@ -80,7 +109,12 @@ const About = () => {
         value: "AIR 3",
         color: "blue",
       },
-      { icon: <FaBrain />, label: "Publications", value: "1", color: "cyan" },
+      { 
+        icon: <FaBrain />, 
+        label: "Research & Patents", 
+        value: "5+ / 1", 
+        color: "cyan" 
+      },
     ],
     [],
   );
@@ -122,7 +156,7 @@ const About = () => {
   const floatingIcons = useMemo(
     () => [
       {
-        icon: <SiTensorflow />,
+        icon: <FaBrain />,
         name: "TensorFlow",
         x: -100,
         y: -60,
@@ -131,7 +165,7 @@ const About = () => {
         size: 40,
       },
       {
-        icon: <SiFastapi />,
+        icon: <FaBolt />,
         name: "FastAPI",
         x: 120,
         y: -80,
@@ -140,7 +174,7 @@ const About = () => {
         size: 36,
       },
       {
-        icon: <SiMongodb />,
+        icon: <FaLeaf />,
         name: "MongoDB",
         x: -130,
         y: 70,
@@ -149,7 +183,7 @@ const About = () => {
         size: 38,
       },
       {
-        icon: <SiDocker />,
+        icon: <FaDocker />,
         name: "Docker",
         x: 110,
         y: 60,
@@ -537,8 +571,96 @@ const About = () => {
                     );
                   })}
                 </div>
-              </motion.div>
             </motion.div>
+            </motion.div>
+          </div>
+
+          {/* Jittered Tech Section - Random but Non-Overlapping */}
+          <div className="mt-20 pt-12 border-t border-gray-800/50 relative min-h-[500px] w-full overflow-hidden">
+            <div className="text-center mb-16 relative z-10">
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-purple-500 mb-1 block">Expertise</span>
+              <h4 className="text-3xl font-black text-white mb-2">Technical Ecosystem</h4>
+              <p className="text-gray-400 text-xs sm:text-sm max-w-xl mx-auto opacity-70">
+                A diverse fusion of AI, Robotics, and Full-Stack Engineering skills.
+              </p>
+            </div>
+
+            <div className="relative h-[450px] w-full">
+              {useMemo(() => {
+                const icons = [
+                  { icon: <FaTerminal />, name: "C++", color: "#00599C" },
+                  { icon: <FaPython />, name: "Python", color: "#3776AB" },
+                  { icon: <FaJs />, name: "JavaScript", color: "#F7DF1E" },
+                  { icon: <FaCode />, name: "TypeScript", color: "#3178C6" },
+                  { icon: <FaHtml5 />, name: "HTML5", color: "#E34F26" },
+                  { icon: <FaCss3Alt />, name: "CSS3", color: "#1572B6" },
+                  { icon: <FaReact />, name: "React.js", color: "#61DAFB" },
+                  { icon: <FaNodeJs />, name: "Node.js", color: "#339933" },
+                  { icon: <SiFlask />, name: "Express.js", color: "#ffffff" },
+                  { icon: <FaCode />, name: "GraphQL", color: "#E10098" },
+                  { icon: <SiRos />, name: "ROS", color: "#22314E" },
+                  { icon: <SiPytorch />, name: "PyTorch", color: "#EE4C2C" },
+                  { icon: <SiYolo />, name: "YOLO", color: "#00FFFF" },
+                  { icon: <SiLangchain />, name: "LangChain", color: "#ffffff" },
+                  { icon: <FaRocket />, name: "SLAM", color: "#8b5cf6" },
+                  { icon: <SiOpencv />, name: "OpenCV", color: "#5C3EE8" },
+                  { icon: <SiDocker />, name: "Docker", color: "#2496ED" },
+                  { icon: <SiAmazonaws />, name: "AWS", color: "#FF9900" },
+                  { icon: <FaCalculator />, name: "MATLAB", color: "#D12C1F" },
+                  { icon: <FaGitAlt />, name: "Git", color: "#F05032" },
+                  { icon: <SiMysql />, name: "MySQL", color: "#4479A1" },
+                  { icon: <SiSelenium />, name: "Selenium", color: "#43B02A" },
+                  { icon: <SiJira />, name: "Jira", color: "#0052CC" },
+                  { icon: <FaRobot />, name: "Gazebo", color: "#FFD700" },
+                ];
+
+                const rows = 4;
+                const cols = 6;
+                const cellWidth = 100 / cols;
+                const cellHeight = 100 / rows;
+                
+                return icons.map((tech, i) => {
+                  const row = Math.floor(i / cols);
+                  const col = i % cols;
+                  
+                  // Jitter within the cell
+                  const top = (row * cellHeight) + (Math.random() * (cellHeight * 0.6)) + (cellHeight * 0.2);
+                  const left = (col * cellWidth) + (Math.random() * (cellWidth * 0.6)) + (cellWidth * 0.2);
+                  
+                  const scale = 0.8 + Math.random() * 0.4;
+                  const delay = Math.random() * 1.5;
+                  
+                  return (
+                    <motion.div
+                      key={i}
+                      className="absolute cursor-pointer group"
+                      style={{ 
+                        top: `${top}%`, 
+                        left: `${left}%`,
+                        zIndex: Math.floor(scale * 10),
+                      }}
+                      initial={{ opacity: 0, scale: 0 }}
+                      whileInView={{ opacity: 0.6, scale: scale }}
+                      whileHover={{ opacity: 1, scale: scale * 1.3, zIndex: 100 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: delay }}
+                    >
+                      <div 
+                        className="text-3xl sm:text-5xl drop-shadow-[0_0_15px_rgba(139,92,246,0.2)] transition-all duration-300"
+                        style={{ color: tech.color }}
+                      >
+                        {tech.icon}
+                      </div>
+                      <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
+                        <div className="bg-gray-900/95 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded-md border border-purple-500/30 whitespace-nowrap">
+                          {tech.name}
+                        </div>
+                      </div>
+                    </motion.div>
+                  );
+                });
+              }, [])}
+            </div>
           </div>
         </motion.div>
       </motion.div>
