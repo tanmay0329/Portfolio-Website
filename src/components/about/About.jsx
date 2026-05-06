@@ -48,7 +48,6 @@ import {
   SiGraphql,
   SiCplusplus,
   SiTypescript,
-  SiIbm,
   SiGoogle
 } from "react-icons/si";
 
@@ -514,7 +513,9 @@ const About = () => {
                 })}
               </div>
 
-              {/* Professional Certifications - Compact */}
+
+
+              {/* Professional Certifications */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -539,7 +540,7 @@ const About = () => {
                       <div className="flex items-center justify-between mb-1.5">
                         <div className="text-lg">
                           {cert.issuer === "IBM" ? (
-                            <SiIbm className="text-blue-400 group-hover:text-blue-300 transition-colors" />
+                            <FaAward className="text-blue-400 group-hover:text-blue-300 transition-colors" />
                           ) : (
                             <SiGoogle className="text-red-400 group-hover:text-red-300 transition-colors" />
                           )}
@@ -552,27 +553,6 @@ const About = () => {
                     </motion.a>
                   ))}
                 </div>
-              </motion.div>
-
-              {/* Additional Tech Stack Badge */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 1.2 }}
-                className="glass-strong rounded-xl p-4 border border-gray-800 text-center"
-              >
-                <p className="text-gray-400 text-sm">
-                  Currently exploring{" "}
-                  <span className="text-purple-400 font-semibold">LLMs</span>,{" "}
-                  <span className="text-blue-400 font-semibold">
-                    Agentic AI
-                  </span>
-                  , and{" "}
-                  <span className="text-cyan-400 font-semibold">
-                    Cloud Native
-                  </span>{" "}
-                  technologies
-                </p>
               </motion.div>
 
               {/* Education Section - Restored under Stats */}
@@ -626,18 +606,24 @@ const About = () => {
                         key={index}
                         className="group relative"
                       >
-                        {/* Glow Backdrop - Only on hover */}
-                        <div className={`absolute inset-0 bg-gradient-to-r ${theme.glow} rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+                        {/* Glow Backdrop - Default on mobile */}
+                        <div className={`absolute inset-0 bg-gradient-to-r ${theme.glow} rounded-xl blur-xl ${isMobile ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'} transition-opacity duration-500`} />
                         
-                        <div className={`relative glass-strong rounded-xl p-4 border border-gray-800 ${theme.border} ${theme.bg} transition-all duration-300 overflow-hidden shadow-lg ${theme.shadow}`}>
+                        <div className={`relative glass-strong rounded-xl p-4 border transition-all duration-300 overflow-hidden shadow-lg ${
+                          isMobile 
+                            ? `border-${theme.name}-500/50 bg-${theme.name}-500/15 shadow-${theme.name}-500/10` 
+                            : `border-gray-800 ${theme.border} ${theme.bg} ${theme.shadow}`
+                        }`}>
                           {/* Animated Gradient Shine on Hover */}
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                          <div className={`absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent transition-transform duration-1000 ${
+                            isMobile ? 'translate-x-full' : '-translate-x-full group-hover:translate-x-full'
+                          }`} />
                           
                           {/* Background Accent */}
-                          <div className={`absolute -right-4 -top-4 w-12 h-12 ${theme.accent} rounded-full blur-xl group-hover:bg-opacity-20 transition-colors`} />
+                          <div className={`absolute -right-4 -top-4 w-12 h-12 ${theme.accent} rounded-full blur-xl ${isMobile ? 'bg-opacity-20' : 'group-hover:bg-opacity-20'} transition-colors`} />
                           
                           <div className="flex justify-between items-start mb-2">
-                            <h4 className={`font-bold text-white text-sm sm:text-base ${theme.text} transition-colors`}>
+                            <h4 className={`font-bold text-white text-sm sm:text-base ${isMobile ? theme.text.replace('group-hover:', '') : `${theme.text} transition-colors`}`}>
                               {edu.degree}
                             </h4>
                             <span className={`text-[10px] sm:text-xs font-mono px-2 py-0.5 rounded-full border whitespace-nowrap ${theme.pill}`}>
