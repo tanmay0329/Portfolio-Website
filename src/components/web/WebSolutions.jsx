@@ -61,7 +61,7 @@ const WebSolutions = () => {
   return (
     <section 
       id="web-solutions" 
-      className="py-24 relative overflow-hidden"
+      className="py-24 relative overflow-hidden bg-[#0a0a0f]"
     >
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 particle-bg">
@@ -84,10 +84,10 @@ const WebSolutions = () => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-purple-500/30 mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/10 mb-6"
           >
-            <FaRocket className="text-purple-400" />
-            <span className="text-sm font-bold text-purple-400 uppercase tracking-widest">Digital Transformation & Growth</span>
+            <span className="text-purple-400 animate-pulse"></span>
+            <span className="text-xs font-black uppercase tracking-widest gradient-text">Digital Transformation & Growth</span>
           </motion.div>
           
           <motion.h2
@@ -97,7 +97,7 @@ const WebSolutions = () => {
             transition={{ delay: 0.05 }}
             className="text-4xl md:text-6xl font-black text-white mb-8"
           >
-            Strategic Web <span className="text-purple-400">Ecosystems</span>
+            Strategic Web <span className="gradient-text">Ecosystems</span>
           </motion.h2>
           
           <motion.div 
@@ -105,10 +105,10 @@ const WebSolutions = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="flex flex-wrap justify-center gap-4 mb-12"
+            className="flex flex-wrap justify-center gap-3 mb-12"
           >
             {["GEO Optimization", "AI SEO", "AEO (Answer Engine)", "Admin Dashboards", "Semantic Architecture", "Local Dominance"].map((item, i) => (
-              <span key={i} className="px-5 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-sm font-bold shadow-lg shadow-purple-500/5">
+              <span key={i} className="px-4 py-1.5 rounded-full glass border border-white/5 text-gray-300 text-xs font-bold shadow-lg">
                 {item}
               </span>
             ))}
