@@ -136,7 +136,7 @@ const Hero = () => {
               <div className="relative z-10 p-1 bg-gradient-to-br from-white/20 to-transparent rounded-3xl backdrop-blur-sm">
                 <img
                   src="/tanmay_bora.jpeg"
-                  alt="Tanmay Bora"
+                  alt="Tanmay Bora - AI Engineer & Full Stack Developer Portrait"
                   className="w-40 h-40 sm:w-56 sm:h-56 rounded-2xl object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl"
                   style={{ objectPosition: "top center" }}
                 />
@@ -195,7 +195,7 @@ const Hero = () => {
               </div>
               <img 
                 src="https://leetcard.jacoblin.cool/tan_may29?theme=dark&font=Inter" 
-                alt="LeetCode" 
+                alt="Tanmay Bora LeetCode Stats - Problems Solved and Ranking" 
                 className="w-full h-auto rounded-xl brightness-90 group-hover:brightness-110 transition-all mt-auto"
               />
             </div>
@@ -210,7 +210,7 @@ const Hero = () => {
               </div>
               <img 
                 src="/Linkedin.jpeg" 
-                alt="LinkedIn" 
+                alt="Tanmay Bora Professional LinkedIn Profile - AI Engineer and Full Stack Developer" 
                 className="w-full aspect-video object-cover rounded-xl brightness-75 group-hover:brightness-100 transition-all mt-auto"
               />
             </div>
@@ -225,7 +225,7 @@ const Hero = () => {
               </div>
               <img 
                 src="https://ghchart.rshah.org/2794B3/tanmay0329" 
-                alt="GitHub" 
+                alt="Tanmay Bora GitHub Contribution Graph - Coding Activity and Open Source History" 
                 className="w-full h-auto rounded-xl brightness-90 group-hover:brightness-110 transition-all invert hue-rotate-180"
               />
             </div>

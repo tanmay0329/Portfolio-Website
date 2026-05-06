@@ -75,7 +75,7 @@ const Navbar = () => {
           >
             <img
               src="/logo.jpeg"
-              alt="Logo"
+              alt="Tanmay Bora Official Logo - AI Engineer & Full Stack Developer"
               className="h-10 w-10 rounded-full object-cover border border-purple-500/50"
             />
           </motion.a>
