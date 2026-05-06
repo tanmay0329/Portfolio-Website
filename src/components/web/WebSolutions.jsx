@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { webProjects } from "../portfolio";
 import { FaArrowRight, FaRocket, FaShieldAlt, FaChartLine } from "react-icons/fa";
 
-const ImageTrail = ({ images, active }) => {
+const ImageTrail = ({ images, active, title }) => {
   const [trail, setTrail] = useState([]);
   const lastPos = useRef({ x: 0, y: 0 });
   const index = useRef(0);
@@ -43,7 +43,7 @@ const ImageTrail = ({ images, active }) => {
           <motion.img
             key={img.id}
             src={img.src}
-            alt="Tanmay Bora Project Showcase - Portfolio Achievement"
+            alt={`Tanmay Bora Project Showcase - ${title || 'Portfolio Achievement'}`}
             initial={{ opacity: 0, scale: 0.5, x: img.x, y: img.y, rotate: img.rotation }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.2, transition: { duration: 0.3 } }}
@@ -55,9 +55,8 @@ const ImageTrail = ({ images, active }) => {
     </div>
   );
 };
-
 const WebSolutions = () => {
-  const [activeTrail, setActiveTrail] = useState(null);
+  const [activeTrail, setActiveTrail] = useState({ images: null, title: "" });
 
   return (
     <section 
@@ -134,8 +133,8 @@ const WebSolutions = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.05, duration: 0.4 }}
-              onMouseEnter={() => setActiveTrail(project.trail)}
-              onMouseLeave={() => setActiveTrail(null)}
+              onMouseEnter={() => setActiveTrail({ images: project.trail, title: project.title })}
+              onMouseLeave={() => setActiveTrail({ images: null, title: "" })}
               className="h-full"
             >
               <a 
@@ -174,7 +173,7 @@ const WebSolutions = () => {
       </div>
 
       {/* Image Trail Effect */}
-      <ImageTrail images={activeTrail} active={!!activeTrail} />
+      <ImageTrail images={activeTrail.images} active={!!activeTrail.images} title={activeTrail.title} />
     </section>
   );
 };
