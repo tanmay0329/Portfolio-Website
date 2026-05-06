@@ -66,6 +66,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <motion.a
+            href="#home"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("#home");

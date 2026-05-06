@@ -47,7 +47,7 @@ function App() {
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tanmaybora.com/" />
+        <meta property="og:url" content="https://tanmaybora.vercel.app/" />
         <meta
           property="og:title"
           content="Tanmay Bora | AI Engineer & Full Stack Developer"
@@ -58,12 +58,12 @@ function App() {
         />
         <meta
           property="og:image"
-          content="https://tanmaybora.com/og-image.jpg"
+          content="https://tanmaybora.vercel.app/tanmay_bora.jpeg"
         />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://tanmaybora.com/" />
+        <meta name="twitter:url" content="https://tanmaybora.vercel.app/" />
         <meta
           name="twitter:title"
           content="Tanmay Bora | AI Engineer & Full Stack Developer"
@@ -74,11 +74,11 @@ function App() {
         />
         <meta
           name="twitter:image"
-          content="https://tanmaybora.com/og-image.jpg"
+          content="https://tanmaybora.vercel.app/tanmay_bora.jpeg"
         />
 
         {/* Canonical */}
-        <link rel="canonical" href="https://tanmaybora.com/" />
+        <link rel="canonical" href="https://tanmaybora.vercel.app/" />
 
 
         {/* Performance */}
