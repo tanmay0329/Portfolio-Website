@@ -28,20 +28,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0f;
+  background: #050505 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #8b5cf6;
-  background: linear-gradient(to bottom, #8b5cf6, #3b82f6);
+  background: linear-gradient(180deg, #a78bfa 0%, #3b82f6 50%, #06b6d4 100%) !important;
   border-radius: 10px;
 }
 
-/* For Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #8b5cf6 #0a0a0f;
-}
 
 /* Glassmorphism utility */
 .glass {

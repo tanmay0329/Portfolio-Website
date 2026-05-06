@@ -90,7 +90,11 @@ function App() {
       </Helmet>
 
       {/* APP UI (UNCHANGED) */}
-      <div className="min-h-screen">
+      <div className="min-h-screen relative">
+        {/* Side Tint Borders */}
+        <div className="fixed left-0 top-0 w-[2px] h-full bg-gradient-to-b from-transparent via-purple-500/40 to-transparent z-[60] pointer-events-none hidden sm:block" />
+        <div className="fixed right-0 top-0 w-[2px] h-full bg-gradient-to-b from-transparent via-blue-500/40 to-transparent z-[60] pointer-events-none hidden sm:block" />
+        
         <Navbar />
         <Hero />
         <Suspense fallback={<SectionFallback />}>
