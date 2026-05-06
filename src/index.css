@@ -15,7 +15,7 @@
   }
 
   body {
-    background: linear-gradient(135deg, #0a0a0f 0%, #14141f 100%);
+    background: linear-gradient(to bottom, #050505 0%, #121225 15%, #1d1d35 45%, #2a2a4a 100%);
     font-family: "Inter", sans-serif;
     color: #e2e8f0;
     overflow-x: hidden;
@@ -237,18 +237,26 @@
 .gradient-border-card {
   position: relative;
   background: linear-gradient(#14141f, #14141f) padding-box,
-              linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(59, 130, 246, 0.2)) border-box;
+              linear-gradient(135deg, rgba(139, 92, 246, 0.4), rgba(59, 130, 246, 0.4)) border-box;
   border: 1px solid transparent !important;
   backdrop-filter: blur(18px);
   border-radius: 20px;
   transition: all 0.3s ease-out;
 }
 
+@media (max-width: 768px) {
+  .gradient-border-card {
+    background: linear-gradient(#1a1a2e, #1a1a2e) padding-box,
+                linear-gradient(135deg, #8b5cf6, #3b82f6) border-box;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(139, 92, 246, 0.2);
+  }
+}
+
 .gradient-border-card:hover {
   transform: translateY(-5px);
   background: linear-gradient(#1a1a2e, #1a1a2e) padding-box,
               linear-gradient(135deg, #8b5cf6, #3b82f6) border-box;
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(139, 92, 246, 0.1);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(139, 92, 246, 0.2);
 }
 
 /* Web Solutions Section Styles */

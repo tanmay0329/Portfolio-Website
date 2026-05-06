@@ -6,7 +6,6 @@ import Hero from "./components/hero/Hero";
 
 const About = lazy(() => import("./components/about/About"));
 const Projects = lazy(() => import("./components/projects/Projects"));
-const Skills = lazy(() => import("./components/skills/Skills"));
 const Achievements = lazy(() =>
   import("./components/achievements/Achievements")
 );
@@ -98,7 +97,6 @@ function App() {
           <About />
           <Projects />
           <WebSolutions />
-          <Skills />
           <Achievements />
           <Contact />
           <Footer />

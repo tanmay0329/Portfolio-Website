@@ -61,7 +61,7 @@ const WebSolutions = () => {
   return (
     <section 
       id="web-solutions" 
-      className="py-24 relative overflow-hidden bg-[#0a0a0f]"
+      className="py-24 relative overflow-hidden"
     >
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 particle-bg">

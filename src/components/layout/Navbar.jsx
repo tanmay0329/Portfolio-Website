@@ -12,7 +12,7 @@ const Navbar = () => {
       { name: "Home", href: "#home" },
       { name: "About", href: "#about" },
       { name: "Projects", href: "#projects" },
-      { name: "Skills", href: "#skills" },
+      { name: "Web Applications", href: "#web-solutions" },
       { name: "Achievements", href: "#achievements" },
       { name: "Contact", href: "#contact" },
     ],
@@ -82,7 +82,7 @@ const Navbar = () => {
           </motion.a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex gap-8">
+          <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <motion.a
                 key={item.name}
@@ -91,7 +91,7 @@ const Navbar = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className={`relative text-gray-300 hover:text-white transition-colors ${
+                className={`relative text-gray-300 hover:text-white transition-colors text-sm font-medium ${
                   activeSection === item.href.substring(1) ? "text-white" : ""
                 }`}
                 whileHover={{ y: -2 }}
@@ -114,7 +114,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-5 py-2 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg text-sm font-bold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all ml-2"
+              className="px-4 py-1.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full text-xs font-bold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all ml-2 flex items-center justify-center whitespace-nowrap"
             >
               Resume
             </motion.a>

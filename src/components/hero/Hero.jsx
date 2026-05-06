@@ -92,7 +92,7 @@ const Hero = () => {
     <section
       ref={targetRef}
       id="home"
-      className="relative min-h-screen overflow-hidden bg-[#0a0a0f] flex items-center justify-center py-20"
+      className="relative min-h-screen overflow-hidden flex items-center justify-center py-20"
     >
       {/* Background Effects */}
       <div className="absolute inset-0">

@@ -28,7 +28,8 @@ import {
   FaBolt,
   FaLeaf,
   FaJira,
-  FaCalculator
+  FaCalculator,
+  FaExternalLinkAlt
 } from "react-icons/fa";
 import { 
   SiPytorch, 
@@ -37,15 +38,19 @@ import {
   SiLangchain,
   SiOpencv,
   SiDocker,
-  SiAmazonaws,
   SiMysql,
   SiJira,
   SiSelenium,
   SiRos,
-  SiFlask
+  SiFlask,
+  SiMongodb,
+  SiFastapi,
+  SiGraphql,
+  SiCplusplus,
+  SiTypescript
 } from "react-icons/si";
 
-import { education, projects, skills, achievements, socialLinks } from "../portfolio";
+import { education, projects, achievements, socialLinks } from "../portfolio";
 
 const About = () => {
   const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.1 });
@@ -92,28 +97,34 @@ const About = () => {
   const stats = useMemo(
     () => [
       {
-        icon: <FaCode />,
-        label: "Projects Built",
-        value: "6+",
-        color: "purple",
-      },
-      {
         icon: <FaAward />,
-        label: "Hackathon Wins",
-        value: "2+",
-        color: "pink",
+        label: "Projects / Wins / Papers",
+        value: "10+ / 4+ / 5+",
+        color: "purple",
+        link: "github.com/tanmay0329/"
       },
       {
         icon: <FaRocket />,
-        label: "Robocon Rank",
+        label: "Robocon India Rank",
         value: "AIR 3",
         color: "blue",
+        link: "https://www.youtube.com/watch?v=MGAykjLD3zk"
       },
-      { 
-        icon: <FaBrain />, 
-        label: "Research & Patents", 
-        value: "5+ / 1", 
-        color: "cyan" 
+      {
+        icon: <FaCalculator />,
+        label: "MathWorks Modeling Award",
+        value: "National",
+        color: "pink",
+        subtitle: "winner",
+        link: "https://www.instagram.com/reel/DU7RheECrm-/?igsh=MTJ2ZzI2NGt4NHhqaQ=="
+      },
+      {
+        icon: <FaRobot />,
+        label: "IHFC Robotics & AI Award",
+        value: "National",
+        color: "cyan",
+        subtitle: "winner",
+        link: "https://www.instagram.com/reel/DU5jnrSilMU/?igsh=MTFyYTc0d2t6MDhqcA=="
       },
     ],
     [],
@@ -156,7 +167,7 @@ const About = () => {
   const floatingIcons = useMemo(
     () => [
       {
-        icon: <FaBrain />,
+        icon: <SiTensorflow />,
         name: "TensorFlow",
         x: -100,
         y: -60,
@@ -165,7 +176,7 @@ const About = () => {
         size: 40,
       },
       {
-        icon: <FaBolt />,
+        icon: <SiFastapi />,
         name: "FastAPI",
         x: 120,
         y: -80,
@@ -174,7 +185,7 @@ const About = () => {
         size: 36,
       },
       {
-        icon: <FaLeaf />,
+        icon: <SiMongodb />,
         name: "MongoDB",
         x: -130,
         y: 70,
@@ -183,7 +194,7 @@ const About = () => {
         size: 38,
       },
       {
-        icon: <FaDocker />,
+        icon: <SiDocker />,
         name: "Docker",
         x: 110,
         y: 60,
@@ -217,7 +228,7 @@ const About = () => {
     <section
       ref={sectionRef}
       id="about"
-      className="py-16 sm:py-24 relative overflow-hidden"
+      className="py-16 sm:py-24 relative overflow-hidden bg-[#1a1a2e]"
     >
       {/* Animated Background - Matching Hero */}
       <div className="absolute inset-0">
@@ -443,31 +454,62 @@ const About = () => {
             >
               {/* Stats Grid - Enhanced with 3D */}
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
-                {stats.map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ delay: 0.3 + index * 0.05, ease: "easeOut" }}
-                    whileHover={{ y: -5 }}
-                    className="relative group"
-                  >
-                    <div
-                      className={`absolute inset-0 bg-gradient-to-r from-${stat.color}-500/20 to-${stat.color}-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500`}
-                    />
-                    <div className="relative glass-strong rounded-xl p-4 sm:p-6 text-center border border-gray-800 group-hover:border-purple-500/50 transition-all duration-300">
-                      <div className="text-3xl sm:text-4xl text-purple-400 mb-2">
-                        {stat.icon}
+                {stats.map((stat, index) => {
+                  const Content = (
+                    <>
+                      <div
+                        className={`absolute inset-0 bg-gradient-to-r from-${stat.color}-500/20 to-${stat.color}-600/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500`}
+                      />
+                      <div className="relative glass-strong rounded-xl p-4 sm:p-6 text-center border border-gray-800 group-hover:border-purple-500/50 transition-all duration-300 h-full flex flex-col justify-center">
+                        <div className="text-3xl sm:text-4xl text-purple-400 mb-2">
+                          {stat.icon}
+                        </div>
+                        <div className="text-xl sm:text-2xl font-bold gradient-text">
+                          {stat.value}
+                        </div>
+                        <div className="text-gray-400 text-xs sm:text-sm mt-1">
+                          {stat.label}
+                        </div>
+                        {stat.subtitle && (
+                          <div className="text-[10px] sm:text-xs text-purple-400/80 mt-1 font-medium leading-tight">
+                            {stat.subtitle}
+                          </div>
+                        )}
+                        {stat.link && (
+                          <div className="absolute top-3 right-3 text-purple-500/40 group-hover:text-purple-400 transition-colors">
+                            <FaExternalLinkAlt size={12} />
+                          </div>
+                        )}
                       </div>
-                      <div className="text-xl sm:text-2xl font-bold gradient-text">
-                        {stat.value}
-                      </div>
-                      <div className="text-gray-400 text-xs sm:text-sm mt-1">
-                        {stat.label}
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
+                    </>
+                  );
+
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={inView ? { opacity: 1, y: 0 } : {}}
+                      transition={{ delay: 0.3 + index * 0.05, ease: "easeOut" }}
+                      whileHover={{ y: -5 }}
+                      className="relative group"
+                    >
+                      {stat.link ? (
+                        <a 
+                          href={stat.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="block h-full cursor-pointer"
+                        >
+                          {Content}
+                        </a>
+                      ) : (
+                        <div className="h-full">
+                          {Content}
+                        </div>
+                      )}
+                    </motion.div>
+                  );
+                })}
               </div>
 
               {/* Additional Tech Stack Badge */}
@@ -576,28 +618,54 @@ const About = () => {
           </div>
 
           {/* Jittered Tech Section - Random but Non-Overlapping */}
-          <div className="mt-20 pt-12 border-t border-gray-800/50 relative min-h-[500px] w-full overflow-hidden">
+          <div className="mt-10 relative min-h-[500px] w-full">
             <div className="text-center mb-16 relative z-10">
-              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-purple-500 mb-1 block">Expertise</span>
-              <h4 className="text-3xl font-black text-white mb-2">Technical Ecosystem</h4>
-              <p className="text-gray-400 text-xs sm:text-sm max-w-xl mx-auto opacity-70">
+              <motion.div
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="inline-block glass rounded-full px-4 py-2 mb-4"
+              >
+                <span className="text-sm font-medium gradient-text">
+                  Expertise
+                </span>
+              </motion.div>
+
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
+              >
+                Technical <span className="gradient-text">Ecosystem</span>
+              </motion.h2>
+
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.4 }}
+                className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base opacity-70"
+              >
                 A diverse fusion of AI, Robotics, and Full-Stack Engineering skills.
-              </p>
+              </motion.p>
             </div>
 
-            <div className="relative h-[450px] w-full">
+            <div className="relative h-[450px] w-full pb-20">
               {useMemo(() => {
                 const icons = [
-                  { icon: <FaTerminal />, name: "C++", color: "#00599C" },
+                  { icon: <SiCplusplus />, name: "C++", color: "#00599C" },
                   { icon: <FaPython />, name: "Python", color: "#3776AB" },
                   { icon: <FaJs />, name: "JavaScript", color: "#F7DF1E" },
-                  { icon: <FaCode />, name: "TypeScript", color: "#3178C6" },
+                  { icon: <SiTypescript />, name: "TypeScript", color: "#3178C6" },
                   { icon: <FaHtml5 />, name: "HTML5", color: "#E34F26" },
                   { icon: <FaCss3Alt />, name: "CSS3", color: "#1572B6" },
                   { icon: <FaReact />, name: "React.js", color: "#61DAFB" },
                   { icon: <FaNodeJs />, name: "Node.js", color: "#339933" },
                   { icon: <SiFlask />, name: "Express.js", color: "#ffffff" },
-                  { icon: <FaCode />, name: "GraphQL", color: "#E10098" },
+                  { icon: <SiGraphql />, name: "GraphQL", color: "#E10098" },
                   { icon: <SiRos />, name: "ROS", color: "#22314E" },
                   { icon: <SiPytorch />, name: "PyTorch", color: "#EE4C2C" },
                   { icon: <SiYolo />, name: "YOLO", color: "#00FFFF" },
@@ -605,7 +673,7 @@ const About = () => {
                   { icon: <FaRocket />, name: "SLAM", color: "#8b5cf6" },
                   { icon: <SiOpencv />, name: "OpenCV", color: "#5C3EE8" },
                   { icon: <SiDocker />, name: "Docker", color: "#2496ED" },
-                  { icon: <SiAmazonaws />, name: "AWS", color: "#FF9900" },
+                  { icon: <FaAws />, name: "AWS", color: "#FF9900" },
                   { icon: <FaCalculator />, name: "MATLAB", color: "#D12C1F" },
                   { icon: <FaGitAlt />, name: "Git", color: "#F05032" },
                   { icon: <SiMysql />, name: "MySQL", color: "#4479A1" },
@@ -623,8 +691,8 @@ const About = () => {
                   const row = Math.floor(i / cols);
                   const col = i % cols;
                   
-                  // Jitter within the cell
-                  const top = (row * cellHeight) + (Math.random() * (cellHeight * 0.6)) + (cellHeight * 0.2);
+                  // Jitter within the cell - Limited to 80% height to prevent cutting
+                  const top = (row * (cellHeight * 0.8)) + (Math.random() * (cellHeight * 0.5)) + (cellHeight * 0.1);
                   const left = (col * cellWidth) + (Math.random() * (cellWidth * 0.6)) + (cellWidth * 0.2);
                   
                   const scale = 0.8 + Math.random() * 0.4;
@@ -640,10 +708,22 @@ const About = () => {
                         zIndex: Math.floor(scale * 10),
                       }}
                       initial={{ opacity: 0, scale: 0 }}
-                      whileInView={{ opacity: 0.6, scale: scale }}
+                      whileInView={{ 
+                        opacity: 0.6, 
+                        scale: scale,
+                      }}
+                      animate={{
+                        scale: [scale, scale * 1.05, scale],
+                        opacity: [0.6, 0.8, 0.6],
+                      }}
+                      transition={{
+                        duration: 3 + Math.random() * 2,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: delay,
+                      }}
                       whileHover={{ opacity: 1, scale: scale * 1.3, zIndex: 100 }}
                       viewport={{ once: true }}
-                      transition={{ delay: delay }}
                     >
                       <div 
                         className="text-3xl sm:text-5xl drop-shadow-[0_0_15px_rgba(139,92,246,0.2)] transition-all duration-300"

@@ -154,20 +154,6 @@ export const projects = [
   }
 ];
 
-export const skills = [
-  { 
-    category: "Languages", 
-    items: ["C++", "Python", "JavaScript", "HTML", "CSS", "TypeScript"] 
-  },
-  { 
-    category: "Frameworks & AI", 
-    items: ["GraphQL", "React.js", "Node.js", "Express.js", "ROS", "PyTorch", "YOLO", "LangChain", "SLAM"] 
-  },
-  { 
-    category: "Tools & Technologies", 
-    items: ["OpenCV", "Docker", "LLMs", "RAG", "Git", "MySQL", "AWS", "MATLAB", "Roboflow", "Selenium", "Gazebo", "Jira", "OCR", "Regex"] 
-  }
-];
 
 export const socialLinks = {
   leetcode: "https://leetcode.com/tan_may29",
