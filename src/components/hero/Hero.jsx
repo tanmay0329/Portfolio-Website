@@ -135,9 +135,9 @@ const Hero = () => {
               {/* Square Frame with rounded corners */}
               <div className="relative z-10 p-1 bg-gradient-to-br from-white/20 to-transparent rounded-3xl backdrop-blur-sm">
                 <img
-                  src="/tanmay_bora.jpeg"
+                  src="/tanmay_bora.webp"
                   alt="Tanmay Bora - AI Engineer & Full Stack Developer Portrait"
-                  className="w-40 h-40 sm:w-56 sm:h-56 rounded-2xl object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl"
+                  className="w-40 h-40 sm:w-56 sm:h-56 rounded-2xl object-cover grayscale-0 sm:grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl"
                   style={{ objectPosition: "top center" }}
                 />
               </div>
@@ -209,7 +209,7 @@ const Hero = () => {
                 <span className="text-[10px] font-bold text-gray-400 tracking-widest uppercase">LinkedIn Profile</span>
               </div>
               <img 
-                src="/Linkedin.jpeg" 
+                src="/Linkedin.webp" 
                 alt="Tanmay Bora Professional LinkedIn Profile - AI Engineer and Full Stack Developer" 
                 className="w-full aspect-video object-cover rounded-xl brightness-75 group-hover:brightness-100 transition-all mt-auto"
               />

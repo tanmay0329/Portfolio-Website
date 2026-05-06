@@ -57,7 +57,7 @@ function App() {
         />
         <meta
           property="og:image"
-          content="https://tanmaybora.vercel.app/tanmay_bora.jpeg"
+          content="https://tanmaybora.vercel.app/tanmay_bora.webp"
         />
 
         {/* Twitter */}
@@ -73,7 +73,7 @@ function App() {
         />
         <meta
           name="twitter:image"
-          content="https://tanmaybora.vercel.app/tanmay_bora.jpeg"
+          content="https://tanmaybora.vercel.app/tanmay_bora.webp"
         />
 
         {/* Canonical */}

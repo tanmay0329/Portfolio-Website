@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
 
           <p className="text-gray-400 text-sm flex items-center gap-1">
-            Made with <FaHeart className="text-red-500" size={12} /> in India
+            Designed & Engineered for the Future
           </p>
         </div>
       </div>

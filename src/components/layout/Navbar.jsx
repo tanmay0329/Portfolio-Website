@@ -75,7 +75,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
           >
             <img
-              src="/logo.jpeg"
+              src="/logo.webp"
               alt="Tanmay Bora Official Logo - AI Engineer & Full Stack Developer"
               className="h-10 w-10 rounded-full object-cover border border-purple-500/50"
             />

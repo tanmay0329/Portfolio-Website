@@ -115,42 +115,42 @@ export const projects = [
     description: "Automated conveyor belt system with integrated camera and flap-based sorting mechanism using YOLO.",
     link: "https://www.linkedin.com/posts/tanmay-bora_the-group-and-memories-activity-7312415656052764672-Z9To",
     tags: ["IOT", "YOLO", "Automation"],
-    image: "/projects/sorting.jpg"
+    image: "/projects/sorting.webp"
   },
   {
     title: "GLOF Early Warning System",
     description: "Custom model for lake detection using PyTorch (~60% accuracy) for preemptive water management.",
     link: "https://github.com/tanmay0329/Cloud-Computing-Computer-Network-CP",
     tags: ["PyTorch", "Cloud", "Disaster Management"],
-    image: "/projects/glof.jpg"
+    image: "/projects/glof.webp"
   },
   {
     title: "MediLinea: Doctor-Patient Portal",
     description: "Automated communication platform with gesture understanding and autonomous emergency table.",
     link: "https://github.com/tanmay0329/MEDILINEA-Connecting-Dcotors-Patients",
     tags: ["Full Stack", "Accessibility", "Healthcare"],
-    image: "/projects/medilinead.jpg"
+    image: "/projects/medilinead.webp"
   },
   {
     title: "Forest Fire Forecasting",
     description: "Real-time fire risk assessment using sensor data and machine learning.",
     link: "https://github.com/tanmay0329/Forest-Fire-Detection-ML",
     tags: ["ML", "Sensors", "IEEE"],
-    image: "/projects/forest-fire.jpg"
+    image: "/projects/forest-fire.webp"
   },
   {
     title: "Drone-based Irrigation",
     description: "Intelligent AET & water sensing irrigation system using drone-mounted sensors.",
     link: "#",
     tags: ["Robotics", "Agriculture", "AI"],
-    image: "/projects/drone.jpg"
+    image: "/projects/drone.webp"
   },
   {
     title: "Invoice Data Parser",
     description: "Secure web tool using Tesseract OCR & Regex to extract financial data from scanned invoices.",
     link: "https://github.com/pranav8doshi/Tender_details_extraction",
     tags: ["OCR", "NLP", "Python"],
-    image: "/projects/invoice.jpg"
+    image: "/projects/invoice.webp"
   }
 ];
 
@@ -224,7 +224,7 @@ export const webProjects = [
     desc: "Developed an Industrial AI solution integrating Install IQ for real-time fault detection, enabling automated issue identification and predictive quality assurance using AI-driven analytics.",
     icon: "⚡",
     link: "#",
-    trail: ["/assets/ezgif-2ce84e6b5e77ed39-jpg/ezgif-frame-001.jpg", "/assets/ezgif-2ce84e6b5e77ed39-jpg/ezgif-frame-002.jpg", "/assets/ezgif-2ce84e6b5e77ed39-jpg/ezgif-frame-003.jpg"],
+    trail: ["/assets/ezgif-2ce84e6b5e77ed39-jpg/ezgif-frame-001.webp", "/assets/ezgif-2ce84e6b5e77ed39-jpg/ezgif-frame-002.webp", "/assets/ezgif-2ce84e6b5e77ed39-jpg/ezgif-frame-003.webp"],
     features: ["Industrial AI", "Fault Detection", "Real-time Monitoring"]
   },
   {
