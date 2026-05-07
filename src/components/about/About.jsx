@@ -98,21 +98,21 @@ const About = () => {
   const stats = useMemo(
     () => [
       {
-        icon: <FaAward />,
+        icon: <img src="/achievements_stats.png" alt="Achievements" className="w-12 h-12 object-contain mx-auto rounded-lg" />,
         label: "Projects / Wins / Papers",
         value: "10+ / 4+ / 5+",
         color: "purple",
         link: "github.com/tanmay0329/"
       },
       {
-        icon: <FaRocket />,
+        icon: <img src="https://aburobocon2025.mnb.mn/images/logo.png" alt="Robocon" className="w-12 h-12 object-contain mx-auto" />,
         label: "Robocon India Rank",
         value: "AIR 3",
         color: "blue",
         link: "https://www.youtube.com/watch?v=MGAykjLD3zk"
       },
       {
-        icon: <FaCalculator />,
+        icon: <img src="/matlab.jpg" alt="MATLAB" className="w-10 h-10 object-contain rounded-lg mx-auto" />,
         label: "MathWorks Modeling Award",
         value: "National",
         color: "pink",
@@ -120,7 +120,7 @@ const About = () => {
         link: "https://www.instagram.com/reel/DU7RheECrm-/?igsh=MTJ2ZzI2NGt4NHhqaQ=="
       },
       {
-        icon: <FaRobot />,
+        icon: <img src="https://www.ihfc.co.in/wp-content/uploads/2025/08/Artboard-43-scaled.png" alt="IHFC" className="w-16 h-10 object-contain mx-auto brightness-125" />,
         label: "IHFC Robotics & AI Award",
         value: "National",
         color: "cyan",
