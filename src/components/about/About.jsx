@@ -54,7 +54,7 @@ import {
 import { education, projects, achievements, socialLinks, certifications } from "../portfolio";
 
 const About = () => {
-  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.1 });
+  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.02 });
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isMobile, setIsMobile] = useState(false);
   const mouseRaf = useRef(0);
@@ -64,8 +64,8 @@ const About = () => {
     offset: ["start end", "end start"],
   });
 
-  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
-  const y = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [30, 0, 0, -30]);
+  const opacity = useTransform(scrollYProgress, [0, 0.05, 0.95, 1], [0, 1, 1, 0]);
+  const y = useTransform(scrollYProgress, [0, 0.05, 0.95, 1], [30, 0, 0, -30]);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
