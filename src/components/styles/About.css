@@ -1,0 +1,138 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 60vh;
+  width: 100%;
+  padding: 80px 0;
+  background-color: var(--backgroundColor);
+}
+
+.about-container {
+  width: var(--cWidth);
+  max-width: var(--cMaxWidth);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-me {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 500;
+  color: var(--accentColor);
+  margin-bottom: 30px;
+}
+
+.about-me p.para {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.about-me p.bio {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.personal-info h4 {
+  font-size: 20px;
+  color: var(--accentColor);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.personal-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.personal-info ul li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #ccc;
+}
+
+.personal-info ul li strong {
+  color: #fff;
+  margin-right: 10px;
+  min-width: 100px;
+  display: inline-block;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.stat-card:hover {
+  border-color: var(--accentColor);
+  transform: translateY(-5px);
+}
+
+.stat-value {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--accentColor);
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1025px) {
+  .about-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .about-me {
+    flex: 1.2;
+  }
+  .about-details {
+    flex: 0.8;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

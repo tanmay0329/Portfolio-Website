@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { webProjects } from "../portfolio";
+import { webProjects } from "../../portfolio";
 import { FaArrowRight, FaRocket, FaShieldAlt, FaChartLine } from "react-icons/fa";
 
 const ImageTrail = ({ images, active, title }) => {
@@ -60,7 +60,7 @@ const WebSolutions = () => {
 
   return (
     <section 
-      id="web-solutions" 
+      id="work" 
       className="py-24 relative overflow-hidden"
     >
       {/* Background Decorative Elements */}

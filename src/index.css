@@ -1,49 +1,164 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 
-@layer base {
-  :root {
-    --ink: #0a0a0f;
-    --ink-light: #14141f;
-    --purple-glow: #8b5cf6;
-    --blue-glow: #3b82f6;
-    --cyan-glow: #06b6d4;
+:root {
+  font-family: "Geist", sans-serif;
+
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  color: #eae5ec;
+  background-color: var(--backgroundColor);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  --accentColor: #c2a4ff;
+  --accentGradient: linear-gradient(135deg, #c2a4ff 0%, #8e55ff 100%);
+  --backgroundColor: #0b080c;
+  --cardBackground: rgba(255, 255, 255, 0.03);
+  --vh: 100vh;
+  --vh: 100svh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Geist", sans-serif;
+}
+body {
+  overflow: hidden;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--accentColor);
+}
+main {
+  opacity: 1;
+  transition: 0.3s;
+}
+.main-active {
+  opacity: 0;
+  animation: fadeIn 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
   }
+}
+body {
+  margin: 0;
+  height: auto;
+  background-color: #000;
+  flex-grow: 1;
+  --cWidth: calc(100% - 30px);
+  --cMaxWidth: 1920px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.main-body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
+.container-main {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.container1 {
+  width: var(--cWidth);
+  height: var(--vh);
+  margin: auto;
+  position: relative;
+}
+.split-line {
+  overflow: hidden;
+}
+.split-h2 {
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
 
+.techstack {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tech-canvas {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+
+
+@media screen and (min-width: 768px) {
   body {
-    background: linear-gradient(to bottom, #050505 0%, #121225 15%, #1d1d35 45%, #2a2a4a 100%);
-    font-family: "Inter", sans-serif;
-    color: #e2e8f0;
-    overflow-x: hidden;
+    --cWidth: 94%;
   }
 }
 
-/* Custom scrollbar */
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #050505 !important;
-  border: none !important;
-  box-shadow: none !important;
+  background: var(--backgroundColor);
 }
-
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #a78bfa 0%, #3b82f6 50%, #06b6d4 100%) !important;
+  background: rgba(194, 164, 255, 0.2);
   border-radius: 10px;
 }
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(194, 164, 255, 0.4);
+}
 
+/* Global Section Titles */
+.title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--accentColor);
+  margin-bottom: 20px;
+  display: block;
+}
 
-/* Glassmorphism utility */
+/* Fade-in Animation for Sections */
+.section-container {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.section-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .glass {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
 }
 
 .glass-dark {
@@ -89,44 +204,7 @@
   mix-blend-mode: screen;
   opacity: 0.4;
 }
-.scanlines {
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.04) 1px,
-    transparent 1px
-  );
-  background-size: 100% 6px;
-  opacity: 0.12;
-}
-.holo-sheen {
-  background: linear-gradient(
-    120deg,
-    rgba(139, 92, 246, 0.12),
-    rgba(59, 130, 246, 0.1),
-    rgba(6, 182, 212, 0.08)
-  );
-  animation: sheen 6s ease-in-out infinite;
-  opacity: 0.25;
-}
 
-@keyframes sheen {
-  0% {
-    transform: translateX(-20%) translateY(-10%);
-  }
-  50% {
-    transform: translateX(10%) translateY(10%);
-  }
-  100% {
-    transform: translateX(-20%) translateY(-10%);
-  }
-}
-
-.neon-ring {
-  box-shadow:
-    0 0 30px rgba(139, 92, 246, 0.35),
-    0 0 60px rgba(59, 130, 246, 0.25);
-}
-
-/* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #8b5cf6, #3b82f6, #06b6d4);
   background-size: 200% 200%;
@@ -148,35 +226,6 @@
   }
 }
 
-/* Floating animation */
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-.float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.float-delayed {
-  animation: float 6s ease-in-out infinite 3s;
-}
-
-/* Glow effects */
-.glow-purple {
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
-}
-
-.glow-blue {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
-}
-
-/* Particle background */
 .particle-bg {
   background-image:
     radial-gradient(
@@ -196,47 +245,6 @@
     );
 }
 
-/* Add these to your existing index.css */
-.bg-grid {
-  background-image:
-    linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
-  background-size: 50px 50px;
-}
-
-@keyframes float-slow {
-  0%,
-  100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-20px) rotate(5deg);
-  }
-}
-
-.animate-float-slow {
-  animation: float-slow 8s ease-in-out infinite;
-}
-
-.custom-scrollbar::-webkit-scrollbar {
-  height: 4px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.5);
-  border-radius: 10px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.8);
-}
-
-/* Reusable Gradient Border Card Utility */
 .gradient-border-card {
   position: relative;
   background: linear-gradient(#14141f, #14141f) padding-box,
@@ -345,3 +353,5 @@
   background: #7c3aed;
   transform: scale(1.05);
 }
+
+

@@ -18,7 +18,7 @@ import {
   FaChartLine,
   FaWordpress,
 } from "react-icons/fa";
-import { achievements as portfolioAchievements } from "../portfolio";
+import { achievements as portfolioAchievements } from "../../portfolio";
 
 const Achievements = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });

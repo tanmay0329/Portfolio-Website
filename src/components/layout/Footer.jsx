@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaHeart, FaFacebook, FaInstagram } from "react-icons/fa";
-import { socialLinks } from "../portfolio";
+import { socialLinks } from "../../portfolio";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
