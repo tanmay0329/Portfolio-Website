@@ -1,5 +1,6 @@
 import React, { Suspense, lazy, useEffect } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import "./index.css";
 
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/Hero";

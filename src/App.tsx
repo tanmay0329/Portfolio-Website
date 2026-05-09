@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import "./index.css";
 import "./App.css";
 
 const CharacterModel = lazy(() => import("./components/Character"));
