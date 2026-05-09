@@ -1,5 +1,6 @@
 import { StrictMode, useState, useEffect, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
 
 const DesktopApp = lazy(() => import("./App.tsx"));
 const MobileApp = lazy(() => import("../srcxx/App.jsx"));
@@ -25,6 +26,8 @@ const Root = () => {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Root />
+    <HelmetProvider>
+      <Root />
+    </HelmetProvider>
   </StrictMode>
 );

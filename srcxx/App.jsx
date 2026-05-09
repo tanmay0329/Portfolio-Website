@@ -1,5 +1,5 @@
 import React, { Suspense, lazy, useEffect } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import "./index.css";
 
 import Navbar from "./components/layout/Navbar";
@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <HelmetProvider>
+    <>
       {/* ✅ SEO TAGS */}
       <Helmet>
         <title>
@@ -107,7 +107,7 @@ function App() {
           <Footer />
         </Suspense>
       </div>
-    </HelmetProvider>
+    </>
   );
 }
 
