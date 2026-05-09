@@ -238,3 +238,34 @@ export const webProjects = [
     features: ["Headless Commerce", "ppraise collab", "Edge Performance"]
   }
 ];
+
+export const experience = [
+  {
+    role: "Founder — PraiseArray",
+    company: "AI Startup Initiative",
+    duration: "2024 – Present",
+    description: "Founded and leading PraiseArray, focusing on headless commerce and high-performance AI solutions. Managing product strategy, technical architecture, and strategic growth.",
+    year: "2025"
+  },
+  {
+    role: "Perception & Simulation Lead",
+    company: "Team BRACT — DD ROBOCON India",
+    duration: "2024 – 2025",
+    description: "Led the perception and simulation-to-hardware pipeline for AIR 3 ranking team. Integrated YOLOv5/v8, ROS, and AR for real-time strategic alignment and autonomous navigation.",
+    year: "2025"
+  },
+  {
+    role: "AI Technical Lead Intern",
+    company: "Robotics & AI Lab",
+    duration: "2024 – Present",
+    description: "Spearheading development of RT-IRAS (Intelligent Teaching Reference Augmentation System). Patent pending for accent-aware speech recognition and GenAI integration.",
+    year: "2024"
+  },
+  {
+    role: "Campus Ambassador",
+    company: "International Model United Nations (IMUN)",
+    duration: "2023 – 2024",
+    description: "Drove student engagement and managed outreach for international conferences, enhancing professional networking and leadership within the student community.",
+    year: "2023"
+  }
+];

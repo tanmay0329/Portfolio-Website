@@ -87,21 +87,21 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & AUTOMATION</h3>
-              <h4>Description</h4>
+              <h3>AI & PRODUCT SYSTEMS</h3>
+              <h4>ENGINEERING INTELLIGENCE</h4>
               <p>
-                Building intelligent workflow systems and AI-powered solutions that automate complex business processes and improve operational efficiency.
+                Developing advanced computer vision pipelines and scalable GenAI products. From patent-pending RT-IRAS to full-stack AI solutions (PraiseArray), I build end-to-end systems that perceive, reason, and scale.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Full Stack & Product Strategy</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Prompt Engineering</div>
-                <div className="what-tags">AI Workflows</div>
-                <div className="what-tags">Conversational AI</div>
-                <div className="what-tags">Automation Systems</div>
-                <div className="what-tags">ChatGPT</div>
-                <div className="what-tags">API Integrations</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">Node.js</div>
+                <div className="what-tags">YOLO v5/v8</div>
+                <div className="what-tags">PyTorch</div>
+                <div className="what-tags">GenAI & NLP</div>
+                <div className="what-tags">Full Stack Developer</div>
+                <div className="what-tags">Product Architect</div>
+                <div className="what-tags">Cloud Infrastructure</div>
+                <div className="what-tags">UI/UX Strategy</div>
+                <div className="what-tags">Systems Design</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -125,20 +125,20 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>PRODUCT STRATEGY</h3>
-              <h4>Description</h4>
+              <h3>ROBOTICS & AUTONOMOUS LOGIC</h3>
+              <h4>SIMULATION TO HARDWARE</h4>
               <p>
-                Combining technical expertise with product thinking to design and scale digital platforms that solve practical business problems and create real-world impact.
+                Leading perception and simulation pipelines for high-stakes robotics. Specializing in autonomous navigation, ROS integration, and AR-assisted alignment for systems that secured AIR 3 at DD Robocon India.
               </p>
               <h5>Focus areas</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Startup Building</div>
-                <div className="what-tags">System Design</div>
-                <div className="what-tags">Team Management</div>
-                <div className="what-tags">UI/UX Strategy</div>
-                <div className="what-tags">Market Analysis</div>
-                <div className="what-tags">Growth Planning</div>
-                <div className="what-tags">Leadership</div>
+                <div className="what-tags">ROS & ROS2</div>
+                <div className="what-tags">Simulink</div>
+                <div className="what-tags">Path Planning</div>
+                <div className="what-tags">LIDAR Integration</div>
+                <div className="what-tags">AR Alignment</div>
+                <div className="what-tags">Firmware Development</div>
+                <div className="what-tags">MATLAB</div>
               </div>
               <div className="what-arrow"></div>
             </div>

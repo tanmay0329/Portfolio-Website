@@ -4,7 +4,42 @@
   margin: auto;
   position: relative;
   height: var(--vh);
+  overflow: hidden;
 }
+
+.landing-edge-glow {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  z-index: 1000;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    var(--accentColor) 0%,
+    rgba(139, 92, 246, 0) 50%,
+    var(--accentColor) 100%
+  );
+  box-shadow: 0 0 20px var(--accentColor);
+  opacity: 0.4;
+  animation: slow-glow 6s ease-in-out infinite;
+}
+
+.edge-left {
+  left: 0;
+  border-right: 1px solid rgba(194, 164, 255, 0.1);
+}
+
+.edge-right {
+  right: 0;
+  border-left: 1px solid rgba(194, 164, 255, 0.1);
+}
+
+@keyframes slow-glow {
+  0%, 100% { opacity: 0.3; filter: blur(2px); }
+  50% { opacity: 0.6; filter: blur(0px); }
+}
+
 .landing-container {
   width: var(--cWidth);
   margin: auto;

@@ -47,7 +47,7 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          TANMAY
+          TANMAY BORA
         </a>
         <ul>
           <li>

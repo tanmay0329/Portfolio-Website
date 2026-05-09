@@ -28,17 +28,17 @@ function App() {
       {/* ✅ SEO TAGS */}
       <Helmet>
         <title>
-          Tanmay Bora | AI Engineer & Full Stack Developer Portfolio
+          Tanmay Bora | AI Builder & Robotics Engineer | Product Builder
         </title>
 
         <meta
           name="description"
-          content="Tanmay Bora - AI Engineer and Full Stack Developer. Specializing in Robotics, AI, and scalable intelligent applications."
+          content="Portfolio of Tanmay Bora, AI Engineer at VIT Pune and Robotics Specialist. Lead Developer for AIR 3 Robocon Team, Patent Holder, and builder of scalable intelligent systems."
         />
 
         <meta
           name="keywords"
-          content="Tanmay Bora, AI Engineer, Full Stack Developer, Robotics, Machine Learning, React, Python, Portfolio, Pune, India"
+          content="Tanmay Bora, AI Builder, Robotics Engineer, AI Engineer, Full Stack Developer, Robotics, Machine Learning, ROS, YOLO, PyTorch, Portfolio, Pune, India"
         />
 
         <meta name="author" content="Tanmay Bora" />
@@ -50,11 +50,11 @@ function App() {
         <meta property="og:url" content="https://tanmaybora.vercel.app/" />
         <meta
           property="og:title"
-          content="Tanmay Bora | AI Engineer & Full Stack Developer"
+          content="Tanmay Bora | AI Builder & Robotics Engineer"
         />
         <meta
           property="og:description"
-          content="Building intelligent systems and scalable applications."
+          content="Building the future of AI and Robotics. Exploring autonomous systems and scalable products."
         />
         <meta
           property="og:image"
@@ -66,11 +66,11 @@ function App() {
         <meta name="twitter:url" content="https://tanmaybora.vercel.app/" />
         <meta
           name="twitter:title"
-          content="Tanmay Bora | AI Engineer & Full Stack Developer"
+          content="Tanmay Bora | AI Builder & Robotics Engineer"
         />
         <meta
           name="twitter:description"
-          content="AI Engineer and Full Stack Developer portfolio."
+          content="AI Engineer & Robotics Specialist portfolio. Building intelligent systems."
         />
         <meta
           name="twitter:image"

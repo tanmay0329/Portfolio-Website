@@ -50,6 +50,8 @@ const Landing = ({ children }: PropsWithChildren) => {
   return (
     <>
       <div className="landing-section" id="landingDiv">
+        <div className="landing-edge-glow edge-left"></div>
+        <div className="landing-edge-glow edge-right"></div>
         <div className="landing-container">
           <div className="landing-intro">
             <div className="relative">
