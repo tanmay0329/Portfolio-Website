@@ -30,7 +30,12 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 500;
-  color: var(--accentColor);
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6, #06b6d4);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 3s ease infinite;
   margin-bottom: 30px;
 }
 
@@ -59,7 +64,12 @@
 
 .personal-info h4 {
   font-size: 20px;
-  color: var(--accentColor);
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6, #06b6d4);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 3s ease infinite;
   margin-bottom: 20px;
   text-transform: uppercase;
 }

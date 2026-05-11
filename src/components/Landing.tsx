@@ -55,39 +55,39 @@ const Landing = ({ children }: PropsWithChildren) => {
         <div className="landing-container">
           <div className="landing-intro">
             <div className="relative">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-20 h-20 rounded-xl flex items-center justify-center overflow-hidden border border-purple-500/30">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-24 h-24 rounded-2xl flex items-center justify-center overflow-hidden border-2 border-purple-500/30 shadow-[0_0_30px_rgba(168,85,247,0.2)]">
                   <img src="/tanmay_bora.webp" alt="Tanmay Bora" className="w-full h-full object-cover object-top" />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold gradient-text">Tanmay Bora</h3>
-                  <p className="text-lg text-gray-400">Final Year CSE (AI)</p>
+                  <h3 className="text-4xl sm:text-5xl font-black gradient-text tracking-tighter">Tanmay Bora</h3>
+                  <p className="text-xl text-gray-400 font-medium tracking-wide">Final Year CSE (AI)</p>
                 </div>
               </div>
 
-              <p className="text-gray-300 leading-relaxed text-base sm:text-lg mb-6">
+              <p className="text-gray-300 leading-relaxed text-lg sm:text-xl mb-8 font-medium">
                 I'm a{" "}
-                <span className="gradient-text font-semibold">
+                <span className="gradient-text font-extrabold">
                   Final year CSE (AI) student
                 </span>{" "}
                 at VIT Pune, passionate about AI, Robotics, and building
                 intelligent systems that solve real-world problems.
               </p>
 
-              <p className="text-gray-300 leading-relaxed text-base sm:text-lg mb-6">
+              <p className="text-gray-300 leading-relaxed text-lg sm:text-xl mb-8">
                 I specialize in{" "}
-                <span className="text-blue-400 font-semibold">
+                <span className="text-blue-400 font-bold tracking-tight">
                   AI Engineering
                 </span>{" "}
                 and{" "}
-                <span className="text-cyan-400 font-semibold">Robotics</span>,
+                <span className="text-cyan-400 font-bold tracking-tight">Robotics</span>,
                 with experience in YOLO, PyTorch, ROS, and full-stack
                 development.
               </p>
 
               {/* Quote */}
-              <div className="mt-6 p-6 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-xl border border-purple-500/20">
-                <p className="text-gray-300 italic text-center text-sm sm:text-base">
+              <div className="mt-8 p-8 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl border border-purple-500/20 backdrop-blur-md">
+                <p className="text-gray-300 italic text-center text-base sm:text-lg font-medium leading-relaxed">
                   "Turning complex problems into elegant, scalable solutions —
                   let's build something amazing together."
                 </p>
@@ -95,11 +95,11 @@ const Landing = ({ children }: PropsWithChildren) => {
 
             </div>
           </div>
-                          <div className="landing-info space-y-4 w-full max-w-sm">
-                            <div className="text-sm uppercase tracking-widest text-purple-400 font-bold mb-6 flex items-center gap-2">
-                              <div className="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></div>
-                              Key Focus Areas
-                            </div>
+          <div className="landing-info space-y-4 w-full max-w-sm">
+            <div className="text-xs uppercase tracking-[0.3em] text-purple-400 font-black mb-8 flex items-center gap-3">
+              <div className="w-2.5 h-2.5 rounded-full bg-purple-500 animate-pulse shadow-[0_0_10px_rgba(168,85,247,0.8)]"></div>
+              Key Focus Areas
+            </div>
                             {interests.map((interest, index) => (
                               <motion.div
                                 key={index}

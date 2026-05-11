@@ -36,7 +36,12 @@ a.contact-social {
   margin: 0;
 }
 .contact-box h2 > span {
-  color: var(--accentColor);
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6, #06b6d4);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 3s ease infinite;
 }
 .contact-box h5 {
   font-size: 20px;

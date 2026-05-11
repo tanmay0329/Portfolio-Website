@@ -14,9 +14,12 @@
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 40px;
-  background: linear-gradient(to right, #fff, var(--accentColor));
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6, #06b6d4);
+  background-size: 200% 200%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 3s ease infinite;
 }
 
 .vision-content p {

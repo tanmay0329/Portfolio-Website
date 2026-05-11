@@ -55,7 +55,12 @@
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--accentColor);
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6, #06b6d4);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 3s ease infinite;
 }
 @media only screen and (min-width: 768px) {
   .header {

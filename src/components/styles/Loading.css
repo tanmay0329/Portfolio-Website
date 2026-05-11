@@ -106,66 +106,53 @@
 }
 
 .user-name {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 900;
-  letter-spacing: 0.5em;
-  margin-bottom: 8px;
+  letter-spacing: 0.8em;
+  margin-bottom: 15px;
   text-transform: uppercase;
   color: #fff;
-  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  text-shadow: 
+    3px 3px 0px rgba(139, 92, 246, 0.4),
+    -3px -3px 0px rgba(6, 182, 212, 0.4);
   position: relative;
-  animation: glitch-text 4s infinite;
+  font-family: 'Geist', sans-serif;
+  margin-left: 20px;
 }
 
 .user-name::before {
   content: "TANMAY BORA";
   position: absolute;
   top: 0;
-  left: -2px;
+  left: 0;
   width: 100%;
   height: 100%;
-  color: #06b6d4;
-  opacity: 0.4;
-  z-index: -1;
-  animation: glitch-anim-1 2s infinite linear alternate-reverse;
-}
-
-@keyframes glitch-text {
-  0%, 95%, 100% { transform: skew(0deg); }
-  96% { transform: skew(10deg); opacity: 0.8; }
-  97% { transform: skew(-10deg); opacity: 0.5; }
-  98% { transform: skew(5deg); opacity: 1; }
-}
-
-@keyframes glitch-anim-1 {
-  0% { clip-path: inset(20% 0 30% 0); transform: translate(-2px, -1px); }
-  20% { clip-path: inset(60% 0 10% 0); transform: translate(2px, 1px); }
-  40% { clip-path: inset(40% 0 50% 0); transform: translate(-1px, 2px); }
-  60% { clip-path: inset(80% 0 5% 0); transform: translate(1px, -2px); }
-  80% { clip-path: inset(10% 0 70% 0); transform: translate(-2px, 1px); }
-  100% { clip-path: inset(30% 0 20% 0); transform: translate(2px, -1px); }
+  color: #fff;
+  opacity: 1;
+  z-index: 1;
 }
 
 .user-titles {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.25em;
-  color: rgba(6, 182, 212, 0.6);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.4em;
+  color: #06b6d4;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-left: 20px;
+  opacity: 0.8;
 }
 
 .user-titles::before, .user-titles::after {
-  content: "";
-  height: 1px;
-  width: 20px;
-  background: linear-gradient(90deg, transparent, #06b6d4);
+  content: "•";
+  color: #8b5cf6;
+  font-weight: 900;
 }
 
-.user-titles::after {
-  background: linear-gradient(270deg, transparent, #06b6d4);
+.user-titles::before, .user-titles::after {
+  display: none;
 }
 
 
@@ -173,15 +160,15 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .pulse-dot {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   background: #06b6d4;
   border-radius: 50%;
   box-shadow: 0 0 15px #06b6d4;
@@ -218,40 +205,41 @@
 }
 
 .identity-label {
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.4em;
-  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.5em;
+  color: rgba(6, 182, 212, 0.5);
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .identity-value {
-  font-size: 80px;
-  font-weight: 100;
-  letter-spacing: -4px;
+  font-size: 110px;
+  font-weight: 900;
+  letter-spacing: -6px;
   line-height: 1;
   margin-bottom: 24px;
   font-variant-numeric: tabular-nums;
-  background: linear-gradient(to bottom, #fff, rgba(255,255,255,0.4));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
+  text-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+  font-family: 'Geist', sans-serif;
 }
 
 .pathway-track {
   position: relative;
-  width: 280px;
-  height: 4px;
+  width: 320px;
+  height: 8px;
   background: rgba(255, 255, 255, 0.05);
   margin: 0 auto;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .pathway-fill {
   height: 100%;
   background: linear-gradient(90deg, #8b5cf6, #3b82f6);
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
   transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .pathway-markers {
@@ -269,19 +257,20 @@
 }
 
 .marker.active {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .status-message {
-  height: 20px;
+  height: 24px;
 }
 
 .message-text {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.3em;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
   color: #3b82f6;
-  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+  text-transform: uppercase;
 }
 
 /* Footer Metrics */
@@ -292,27 +281,52 @@
   padding: 60px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .metrics-grid {
-  display: grid;
-  grid-template-cols: repeat(6, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 30px;
-  max-width: 1400px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding-top: 30px;
+  position: absolute;
+  left: 60px;
+  bottom: 120px;
+  width: 300px;
+  border: none;
+  padding: 0;
+  z-index: 200;
 }
 
 .metric-item {
-  font-size: 14px;
+  font-size: 32px;
   font-weight: 900;
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
   font-variant-numeric: tabular-nums;
   position: relative;
+  font-family: 'Geist', sans-serif;
+  text-align: left;
+}
+
+.metric-item span {
+  font-size: 11px;
+  color: #06b6d4;
+  letter-spacing: 0.25em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.metric-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 40px;
+  height: 2px;
+  background: #3b82f6;
+  opacity: 0.6;
 }
 
 .metric-item::after {
