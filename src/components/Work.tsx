@@ -183,7 +183,7 @@ const Work = () => {
                 </div>
                 {project.link && project.link !== "#" && (
                   <div className="mt-6 flex items-center gap-2 text-purple-400 text-sm font-bold group-hover:gap-4 transition-all">
-                    VISIT PROJECT <FaArrowRight size={14} />
+                    <span className="gradient-text">VISIT PROJECT</span> <FaArrowRight size={14} />
                   </div>
                 )}
               </div>

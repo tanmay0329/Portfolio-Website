@@ -28,8 +28,10 @@ const WhatIDo = () => {
     <div className="whatIDO" id="whatido">
       <div className="what-box">
         <h2 className="title">
-          W<span className="hat-h2">HAT</span>
-          <div>
+          <div className="gradient-text">
+            W<span className="hat-h2">HAT</span>
+          </div>
+          <div className="gradient-text">
             I<span className="do-h2"> BUILD</span>
           </div>
         </h2>
@@ -87,7 +89,7 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & PRODUCT SYSTEMS</h3>
+              <h3 className="gradient-text">AI & PRODUCT SYSTEMS</h3>
               <h4>ENGINEERING INTELLIGENCE</h4>
               <p>
                 Developing advanced computer vision pipelines and scalable GenAI products. From patent-pending RT-IRAS to full-stack AI solutions (PraiseArray), I build end-to-end systems that perceive, reason, and scale.
@@ -125,7 +127,7 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>ROBOTICS & AUTONOMOUS LOGIC</h3>
+              <h3 className="gradient-text">ROBOTICS & AUTONOMOUS LOGIC</h3>
               <h4>SIMULATION TO HARDWARE</h4>
               <p>
                 Leading perception and simulation pipelines for high-stakes robotics. Specializing in autonomous navigation, ROS integration, and AR-assisted alignment for systems that secured AIR 3 at DD Robocon India.

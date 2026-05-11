@@ -137,7 +137,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: var(--accentColor);
+  color: inherit;
   margin-bottom: 20px;
   display: block;
 }
@@ -209,9 +209,11 @@ body {
   background: linear-gradient(135deg, #8b5cf6, #3b82f6, #06b6d4);
   background-size: 200% 200%;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   animation: gradient 3s ease infinite;
+  display: inline-block;
 }
 
 @keyframes gradient {

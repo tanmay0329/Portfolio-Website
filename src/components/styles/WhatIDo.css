@@ -34,7 +34,7 @@
   font-style: italic;
 }
 .do-h2 {
-  color: var(--accentColor);
+  font-weight: 900;
 }
 .what-box-in {
   flex-direction: column;
@@ -78,7 +78,6 @@
   font-size: 28px;
   letter-spacing: 1px;
   margin: 0 0 10px 0;
-  color: var(--accentColor);
   font-weight: 600;
 }
 .what-content p {

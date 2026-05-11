@@ -203,7 +203,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         className="flex-1 px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg font-semibold text-center hover:shadow-glow transition-all"
                       >
-                        View Project
+                        <span className="gradient-text">View Project</span>
                       </a>
                     )}
                   </div>

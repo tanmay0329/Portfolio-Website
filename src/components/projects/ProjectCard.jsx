@@ -71,9 +71,9 @@ const ProjectCard = ({ project, cardVariants, setSelectedProject }) => {
           <div className="mt-auto pt-4 flex items-center justify-between border-t border-white/5">
             <div className="flex items-center gap-2 text-purple-400 text-sm font-bold group-hover:gap-3 transition-all">
               {project.link && project.link !== "#" ? (
-                <>VISIT PROJECT <FaArrowRight size={12} /></>
+                <><span className="gradient-text">VISIT PROJECT</span> <FaArrowRight size={12} /></>
               ) : (
-                <>VIEW DETAILS <FaArrowRight size={12} /></>
+                <><span className="gradient-text">VIEW DETAILS</span> <FaArrowRight size={12} /></>
               )}
             </div>
             {project.link && project.link !== "#" && (

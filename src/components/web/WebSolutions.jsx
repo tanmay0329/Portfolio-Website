@@ -163,7 +163,7 @@ const WebSolutions = () => {
 
                 <div className="mt-auto pt-4 flex flex-col items-center">
                   <span className="btn-visit">
-                    {project.status === "LAUNCHING SOON" ? "Launching Soon" : "View Live Demo →"}
+                    {project.status === "LAUNCHING SOON" ? "Launching Soon" : <span className="gradient-text">View Live Demo →</span>}
                   </span>
                 </div>
               </a>
