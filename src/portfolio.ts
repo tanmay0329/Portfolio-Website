@@ -193,7 +193,7 @@ export const webProjects = [
     desc: "Developed a full-stack service provider management platform with dynamic admin-controlled pricing, real-time slot scheduling, booking management, customer analytics, payment tracking, and automated operational workflows.",
     icon: "🔧",
     link: "https://cmtcwireless.vercel.app/",
-    trail: ["cmtc_impressions.webp", "cmtcwireless.webp", "/assets/repair_business_automation.webp", "/assets/repair_app_interface.webp", "/assets/repair_workstation_modern.webp"],
+    trail: ["/cmtc_impressions.webp", "/cmtcwireless.webp", "/assets/repair_business_automation.webp", "/assets/repair_app_interface.webp", "/assets/repair_workstation_modern.webp"],
     features: ["AEO & AI SEO", "Admin Dashboard", "Inventory Sync"]
   },
   {
@@ -201,7 +201,7 @@ export const webProjects = [
     desc: "Developed a full-stack ERP/Admin Dashboard featuring KhataBook-inspired receivables/payables tracking, customer analytics, inventory management, and interactive business intelligence dashboards.",
     icon: "🏗️",
     link: "https://prashanttraders.shop/",
-    trail: ["/prashanttraders.webp", "prashanttraders_analytics.webp","Screenshot 2026-03-23 130111.webp","Screenshot 2026-03-23 131309.webp","Screenshot 2026-03-23 131538.webp", "/assets/building_material_digitalization.webp", "/assets/logistics_fleet_tracking.webp", "/assets/warehouse_automation_robotics.webp"],
+    trail: ["/prashanttraders.webp", "/prashanttraders_analytics.webp","/Screenshot 2026-03-23 130111.webp","/Screenshot 2026-03-23 131309.webp","/Screenshot 2026-03-23 131538.webp", "/assets/building_material_digitalization.webp", "/assets/logistics_fleet_tracking.webp", "/assets/warehouse_automation_robotics.webp"],
     features: ["GEO Optimization", "Logistics AI", "Scalable Catalog"]
   },
   {
@@ -209,7 +209,7 @@ export const webProjects = [
     desc: "Developed and optimized a modern platform implementing AI-driven SEO strategies to rank among the top results for 'Best Civil Engineer in Beed', showcasing portfolios and company achievements.",
     icon: "📐",
     link: "https://rbeaassociates.com/",
-    trail: ["rbea.webp","Screenshot 2026-05-04 121102.webp","Screenshot 2026-05-04 121538.webp","Screenshot 2026-05-04 121634.webp","Screenshot 2026-05-04 121733.webp","Screenshot 2026-05-04 121930.webp", "/assets/civil_engineering_modernization.webp", "/assets/bridge_3d_render_monitor.webp", "/assets/civil_ar_site_view.webp"],
+    trail: ["/rbea.webp","/Screenshot 2026-05-04 121102.webp","/Screenshot 2026-05-04 121538.webp","/Screenshot 2026-05-04 121634.webp","/Screenshot 2026-05-04 121733.webp","/Screenshot 2026-05-04 121930.webp", "/assets/civil_engineering_modernization.webp", "/assets/bridge_3d_render_monitor.webp", "/assets/civil_ar_site_view.webp"],
     features: ["Semantic SEO", "Industry-Grade Stack", "Local Authority"]
   },
   {
