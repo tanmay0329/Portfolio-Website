@@ -101,21 +101,21 @@ const About = () => {
   const stats = useMemo(
     () => [
       {
-        icon: <img src="/achievements_stats.png" alt="Achievements" className="w-12 h-12 object-contain mx-auto rounded-lg" />,
+        icon: <img src="/achievements_stats.webp" alt="Tanmay Bora Projects, Wins, and Research Papers Statistics" className="w-12 h-12 object-contain mx-auto rounded-lg" loading="lazy" decoding="async" />,
         label: "Projects / Wins / Papers",
         value: "10+ / 4+ / 5+",
         color: "purple",
         link: "https://github.com/tanmay0329/"
       },
       {
-        icon: <img src="https://aburobocon2025.mnb.mn/images/logo.png" alt="Robocon" className="w-12 h-12 object-contain mx-auto" />,
+        icon: <img src="https://aburobocon2025.mnb.mn/images/logo.png" alt="ABU Robocon 2025 Logo - National Robotics Competition" className="w-12 h-12 object-contain mx-auto" loading="lazy" decoding="async" />,
         label: "Robocon India Rank",
         value: "AIR 3",
         color: "blue",
         link: "https://www.youtube.com/watch?v=MGAykjLD3zk"
       },
       {
-        icon: <img src="/matlab.jpg" alt="MATLAB" className="w-10 h-10 object-contain rounded-lg mx-auto" />,
+        icon: <img src="/matlab.webp" alt="MathWorks MATLAB logo - Modeling Award Winner" className="w-10 h-10 object-contain rounded-lg mx-auto" loading="lazy" decoding="async" />,
         label: "MathWorks Modeling Award",
         value: "National",
         color: "pink",
@@ -123,7 +123,7 @@ const About = () => {
         link: "https://www.instagram.com/reel/DU7RheECrm-/?igsh=MTJ2ZzI2NGt4NHhqaQ=="
       },
       {
-        icon: <img src="https://www.ihfc.co.in/wp-content/uploads/2025/08/Artboard-43-scaled.png" alt="IHFC" className="w-16 h-10 object-contain mx-auto brightness-125" />,
+        icon: <img src="https://www.ihfc.co.in/wp-content/uploads/2025/08/Artboard-43-scaled.png" alt="IHFC Robotics and AI Award - National Winner" className="w-16 h-10 object-contain mx-auto brightness-125" loading="lazy" decoding="async" />,
         label: "IHFC Robotics & AI Award",
         value: "National",
         color: "cyan",
@@ -361,8 +361,9 @@ const About = () => {
                     </div>
                     <img 
                       src="https://leetcard.jacoblin.cool/tan_may29?theme=dark&font=Inter" 
-                      alt="Tanmay Bora LeetCode Stats - Problems Solved and Ranking" 
+                      alt="Tanmay Bora LeetCode Stats - Algorithm Problems Solved and Global Ranking" 
                       className="w-full h-auto rounded-xl brightness-90 group-hover:brightness-110 transition-all"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                 </a>
@@ -378,6 +379,7 @@ const About = () => {
                       src="/Linkedin.webp" 
                       alt="Tanmay Bora Professional LinkedIn Profile - AI Engineer and Full Stack Developer" 
                       className="w-full aspect-video object-cover rounded-xl brightness-75 group-hover:brightness-100 transition-all"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                 </a>
@@ -393,6 +395,7 @@ const About = () => {
                       src="https://ghchart.rshah.org/2794B3/tanmay0329" 
                       alt="Tanmay Bora GitHub Contribution Graph - Coding Activity and Open Source History" 
                       className="w-full h-auto rounded-xl brightness-90 group-hover:brightness-110 transition-all invert hue-rotate-180"
+                      loading="lazy" decoding="async"
                     />
                   </div>
                 </a>

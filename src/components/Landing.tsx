@@ -57,7 +57,7 @@ const Landing = ({ children }: PropsWithChildren) => {
             <div className="relative">
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-24 h-24 rounded-2xl flex items-center justify-center overflow-hidden border-2 border-purple-500/30 shadow-[0_0_30px_rgba(168,85,247,0.2)]">
-                  <img src="/tanmay_bora.webp" alt="Tanmay Bora" className="w-full h-full object-cover object-top" />
+                  <img src="/tanmay_bora.webp" alt="Tanmay Bora - AI Engineer and Full Stack Developer Portrait" className="w-full h-full object-cover object-top" fetchpriority="high" />
                 </div>
                 <div>
                   <h3 className="text-4xl sm:text-5xl font-black gradient-text tracking-tighter">Tanmay Bora</h3>

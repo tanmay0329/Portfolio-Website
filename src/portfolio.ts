@@ -193,7 +193,7 @@ export const webProjects = [
     desc: "Developed a full-stack service provider management platform with dynamic admin-controlled pricing, real-time slot scheduling, booking management, customer analytics, payment tracking, and automated operational workflows.",
     icon: "🔧",
     link: "https://cmtcwireless.vercel.app/",
-    trail: ["/cmtc_impressions.webp", "/cmtcwireless.webp", "/assets/repair_business_automation.webp", "/assets/repair_app_interface.webp", "/assets/repair_workstation_modern.webp"],
+    trail: ["/cmtc_wireless_service_provider_impressions.webp", "/cmtc_wireless_service_provider.webp", "/assets/repair_business_automation.webp", "/assets/repair_app_interface.webp", "/assets/repair_workstation_modern.webp"],
     features: ["AEO & AI SEO", "Admin Dashboard", "Inventory Sync"]
   },
   {
@@ -201,7 +201,7 @@ export const webProjects = [
     desc: "Developed a full-stack ERP/Admin Dashboard featuring KhataBook-inspired receivables/payables tracking, customer analytics, inventory management, and interactive business intelligence dashboards.",
     icon: "🏗️",
     link: "https://prashanttraders.shop/",
-    trail: ["/prashanttraders.webp", "/prashanttraders_analytics.webp","/Screenshot 2026-03-23 130111.webp","/Screenshot 2026-03-23 131309.webp","/Screenshot 2026-03-23 131538.webp", "/assets/building_material_digitalization.webp", "/assets/logistics_fleet_tracking.webp", "/assets/warehouse_automation_robotics.webp"],
+    trail: ["/prashant_traders_building_material_supplier.webp", "/prashant_traders_business_analytics.webp","/prashant_traders_erp_dashboard_1.webp","/prashant_traders_erp_dashboard_2.webp","/prashant_traders_erp_dashboard_3.webp", "/assets/building_material_digitalization.webp", "/assets/logistics_fleet_tracking.webp", "/assets/warehouse_automation_robotics.webp"],
     features: ["GEO Optimization", "Logistics AI", "Scalable Catalog"]
   },
   {
@@ -209,7 +209,7 @@ export const webProjects = [
     desc: "Developed and optimized a modern platform implementing AI-driven SEO strategies to rank among the top results for 'Best Civil Engineer in Beed', showcasing portfolios and company achievements.",
     icon: "📐",
     link: "https://rbeaassociates.com/",
-    trail: ["/rbea.webp","/Screenshot 2026-05-04 121102.webp","/Screenshot 2026-05-04 121538.webp","/Screenshot 2026-05-04 121634.webp","/Screenshot 2026-05-04 121733.webp","/Screenshot 2026-05-04 121930.webp", "/assets/civil_engineering_modernization.webp", "/assets/bridge_3d_render_monitor.webp", "/assets/civil_ar_site_view.webp"],
+    trail: ["/rbea_associates_civil_engineering.webp","/rbea_associates_portfolio_1.webp","/rbea_associates_portfolio_2.webp","/rbea_associates_portfolio_3.webp","/rbea_associates_portfolio_4.webp","/rbea_associates_portfolio_5.webp", "/assets/civil_engineering_modernization.webp", "/assets/bridge_3d_render_monitor.webp", "/assets/civil_ar_site_view.webp"],
     features: ["Semantic SEO", "Industry-Grade Stack", "Local Authority"]
   },
   {
@@ -217,7 +217,7 @@ export const webProjects = [
     desc: "A modern digital storefront for wholesale and retail grocery business. Features a comprehensive product catalog, bulk inquiry system, and optimized customer experience.",
     icon: "🛒",
     link: "https://om-sales-corporation.vercel.app/",
-    trail: ["/om sales.webp", "/om_sales_grocery.webp", "/om_sales_wholesale.webp"],
+    trail: ["/om_sales_corporation_grocery.webp", "/om_sales_grocery.webp", "/om_sales_wholesale.webp"],
     features: ["B2B & B2C", "Product Catalog", "Wholesale"]
   },
   {
@@ -225,7 +225,7 @@ export const webProjects = [
     desc: "A creative portfolio platform for a face designer and anime artist. Features a dynamic gallery, visually stunning interactions, and an immersive showcase of artistic work.",
     icon: "🎨",
     link: "https://tanmay0329.github.io/kaalakariika/",
-    trail: ["/kalakarika.webp", "/kaalakariika_anime.webp", "/kaalakariika_workspace.webp"],
+    trail: ["/kaalakariika_anime_artist_portfolio.webp", "/kaalakariika_anime.webp", "/kaalakariika_workspace.webp"],
     features: ["Portfolio", "Dynamic Gallery", "Creative UI"]
   },
   {
@@ -233,7 +233,7 @@ export const webProjects = [
     desc: "An elegant e-commerce landing page for premium dry fruits. Showcases product quality with a clean UI, smooth animations, and an optimized purchasing journey.",
     icon: "🌰",
     link: "https://dry-fruit-nine.vercel.app/",
-    trail: ["/nutriana.webp", "/dry_fruits_bowl.webp", "/dry_fruits_packaging.webp"],
+    trail: ["/premium_dry_fruits_ecommerce.webp", "/dry_fruits_bowl.webp", "/dry_fruits_packaging.webp"],
     features: ["E-commerce", "Clean UI", "Product Showcase"]
   },
   {

@@ -139,6 +139,7 @@ const Hero = () => {
                   alt="Tanmay Bora - AI Engineer & Full Stack Developer Portrait"
                   className="w-40 h-40 sm:w-56 sm:h-56 rounded-2xl object-cover grayscale-0 sm:grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl"
                   style={{ objectPosition: "top center" }}
+                  fetchpriority="high"
                 />
               </div>
 
@@ -195,8 +196,9 @@ const Hero = () => {
               </div>
               <img 
                 src="https://leetcard.jacoblin.cool/tan_may29?theme=dark&font=Inter" 
-                alt="Tanmay Bora LeetCode Stats - Problems Solved and Ranking" 
+                alt="Tanmay Bora LeetCode Stats - Algorithm Problems Solved and Global Ranking" 
                 className="w-full h-auto rounded-xl brightness-90 group-hover:brightness-110 transition-all mt-auto"
+                loading="lazy" decoding="async"
               />
             </div>
           </a>
@@ -212,6 +214,7 @@ const Hero = () => {
                 src="/Linkedin.webp" 
                 alt="Tanmay Bora Professional LinkedIn Profile - AI Engineer and Full Stack Developer" 
                 className="w-full aspect-video object-cover rounded-xl brightness-75 group-hover:brightness-100 transition-all mt-auto"
+                loading="lazy" decoding="async"
               />
             </div>
           </a>
@@ -227,6 +230,7 @@ const Hero = () => {
                 src="https://ghchart.rshah.org/2794B3/tanmay0329" 
                 alt="Tanmay Bora GitHub Contribution Graph - Coding Activity and Open Source History" 
                 className="w-full h-auto rounded-xl brightness-90 group-hover:brightness-110 transition-all invert hue-rotate-180"
+                loading="lazy" decoding="async"
               />
             </div>
           </a>

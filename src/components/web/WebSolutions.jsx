@@ -43,7 +43,9 @@ const ImageTrail = ({ images, active, title }) => {
           <motion.img
             key={img.id}
             src={img.src}
-            alt={`Tanmay Bora Project Showcase - ${title || 'Portfolio Achievement'}`}
+            alt={`Hover preview showcasing details of the ${title || 'Portfolio'} project`}
+            loading="lazy"
+            decoding="async"
             initial={{ opacity: 0, scale: 0.5, x: img.x, y: img.y, rotate: img.rotation }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.2, transition: { duration: 0.3 } }}

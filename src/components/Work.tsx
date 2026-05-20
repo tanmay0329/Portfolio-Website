@@ -50,7 +50,9 @@ const ImageTrail = ({ images, active, title }: { images: string[] | null, active
           <motion.img
             key={img.id}
             src={img.src}
-            alt={`Showcase - ${title}`}
+            alt={`Hover preview showing details of the ${title} project`}
+            loading="lazy"
+            decoding="async"
             initial={{ opacity: 0, scale: 0.5, x: img.x, y: img.y, rotate: img.rotation }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.2, transition: { duration: 0.3 } }}
