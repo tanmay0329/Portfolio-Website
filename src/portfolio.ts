@@ -193,7 +193,7 @@ export const webProjects = [
     desc: "Developed a full-stack service provider management platform with dynamic admin-controlled pricing, real-time slot scheduling, booking management, customer analytics, payment tracking, and automated operational workflows.",
     icon: "🔧",
     link: "https://cmtcwireless.vercel.app/",
-    trail: ["/assets/repair_business_automation.webp", "/assets/repair_app_interface.webp", "/assets/repair_workstation_modern.webp"],
+    trail: ["cmtc_impressions.webp", "cmtcwireless.webp", "/assets/repair_business_automation.webp", "/assets/repair_app_interface.webp", "/assets/repair_workstation_modern.webp"],
     features: ["AEO & AI SEO", "Admin Dashboard", "Inventory Sync"]
   },
   {
@@ -201,7 +201,7 @@ export const webProjects = [
     desc: "Developed a full-stack ERP/Admin Dashboard featuring KhataBook-inspired receivables/payables tracking, customer analytics, inventory management, and interactive business intelligence dashboards.",
     icon: "🏗️",
     link: "https://prashanttraders.shop/",
-    trail: ["/assets/building_material_digitalization.webp", "/assets/logistics_fleet_tracking.webp", "/assets/warehouse_automation_robotics.webp"],
+    trail: ["/prashanttraders.webp", "prashanttraders_analytics.webp","Screenshot 2026-03-23 130111.webp","Screenshot 2026-03-23 131309.webp","Screenshot 2026-03-23 131538.webp", "/assets/building_material_digitalization.webp", "/assets/logistics_fleet_tracking.webp", "/assets/warehouse_automation_robotics.webp"],
     features: ["GEO Optimization", "Logistics AI", "Scalable Catalog"]
   },
   {
@@ -209,8 +209,32 @@ export const webProjects = [
     desc: "Developed and optimized a modern platform implementing AI-driven SEO strategies to rank among the top results for 'Best Civil Engineer in Beed', showcasing portfolios and company achievements.",
     icon: "📐",
     link: "https://rbeaassociates.com/",
-    trail: ["/assets/civil_engineering_modernization.webp", "/assets/bridge_3d_render_monitor.webp", "/assets/civil_ar_site_view.webp"],
+    trail: ["rbea.webp","Screenshot 2026-05-04 121102.webp","Screenshot 2026-05-04 121538.webp","Screenshot 2026-05-04 121634.webp","Screenshot 2026-05-04 121733.webp","Screenshot 2026-05-04 121930.webp", "/assets/civil_engineering_modernization.webp", "/assets/bridge_3d_render_monitor.webp", "/assets/civil_ar_site_view.webp"],
     features: ["Semantic SEO", "Industry-Grade Stack", "Local Authority"]
+  },
+  {
+    title: "Om Sales Corporation",
+    desc: "A modern digital storefront for wholesale and retail grocery business. Features a comprehensive product catalog, bulk inquiry system, and optimized customer experience.",
+    icon: "🛒",
+    link: "https://om-sales-corporation.vercel.app/",
+    trail: ["/om sales.webp", "/om_sales_grocery.webp", "/om_sales_wholesale.webp"],
+    features: ["B2B & B2C", "Product Catalog", "Wholesale"]
+  },
+  {
+    title: "Kaalakariika",
+    desc: "A creative portfolio platform for a face designer and anime artist. Features a dynamic gallery, visually stunning interactions, and an immersive showcase of artistic work.",
+    icon: "🎨",
+    link: "https://tanmay0329.github.io/kaalakariika/",
+    trail: ["/kalakarika.webp", "/kaalakariika_anime.webp", "/kaalakariika_workspace.webp"],
+    features: ["Portfolio", "Dynamic Gallery", "Creative UI"]
+  },
+  {
+    title: "Premium Dry Fruits",
+    desc: "An elegant e-commerce landing page for premium dry fruits. Showcases product quality with a clean UI, smooth animations, and an optimized purchasing journey.",
+    icon: "🌰",
+    link: "https://dry-fruit-nine.vercel.app/",
+    trail: ["/nutriana.webp", "/dry_fruits_bowl.webp", "/dry_fruits_packaging.webp"],
+    features: ["E-commerce", "Clean UI", "Product Showcase"]
   },
   {
     title: "Healthcare",
@@ -233,10 +257,10 @@ export const webProjects = [
     desc: "Developing a high-performance headless commerce solution as a part-time (hobby) project with PraiseArray (my startup). Focused on maximum conversion, ultra-fast edge delivery, and scalable microservices. Launching soon.",
     icon: "🛍️",
     link: "#",
-    trail: ["/assets/ecommerce_dashboard.webp", "/assets/ecommerce_dashboard.webp", "/assets/ecommerce_dashboard.webp"],
+    trail: ["/assets/ecommerce_dashboard.webp", "/assets/ecommerce_analytics_dashboard.webp", "/assets/ecommerce_storefront_ui.webp", "/assets/ecommerce_architecture.webp"],
     status: "LAUNCHING SOON",
     features: ["Headless Commerce", "ppraise collab", "Edge Performance"]
-  }
+  },
 ];
 
 export const experience = [
