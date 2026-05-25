@@ -64,6 +64,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
               <WhatIDo />
             </div>
             <Work />
+            <Projects />
             {isDesktopView && (
               <Suspense fallback={<div>Loading....</div>}>
                 <TechStack />

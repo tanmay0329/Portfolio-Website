@@ -160,7 +160,8 @@ export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/tanmay-bora",
   github: "https://github.com/tanmay0329",
   facebook: "https://www.facebook.com/profile.php?id=61565031476448&mibextid=ZbWKwL",
-  instagram: "https://www.instagram.com/_tanmay_bora_"
+  instagram: "https://www.instagram.com/_tanmay_bora_",
+  resume: "https://drive.google.com/file/d/102rjfMxtAzbANc1jgJ-iAIV2WVK-CRp6/view"
 };
 
 export const certifications = [
@@ -192,7 +193,7 @@ export const webProjects = [
     desc: "Developed a full-stack service provider management platform with dynamic admin-controlled pricing, real-time slot scheduling, booking management, customer analytics, payment tracking, and automated operational workflows.",
     icon: "🔧",
     link: "https://cmtcwireless.vercel.app/",
-    trail: ["/assets/repair_business_automation.webp", "/assets/repair_app_interface.webp", "/assets/repair_workstation_modern.webp"],
+    trail: ["/cmtc_wireless_service_provider_impressions.webp", "/cmtc_wireless_service_provider.webp", "/assets/repair_business_automation.webp", "/assets/repair_app_interface.webp", "/assets/repair_workstation_modern.webp"],
     features: ["AEO & AI SEO", "Admin Dashboard", "Inventory Sync"]
   },
   {
@@ -200,7 +201,7 @@ export const webProjects = [
     desc: "Developed a full-stack ERP/Admin Dashboard featuring KhataBook-inspired receivables/payables tracking, customer analytics, inventory management, and interactive business intelligence dashboards.",
     icon: "🏗️",
     link: "https://prashanttraders.shop/",
-    trail: ["/assets/building_material_digitalization.webp", "/assets/logistics_fleet_tracking.webp", "/assets/warehouse_automation_robotics.webp"],
+    trail: ["/prashant_traders_building_material_supplier.webp", "/prashant_traders_business_analytics.webp","/prashant_traders_erp_dashboard_1.webp","/prashant_traders_erp_dashboard_2.webp","/prashant_traders_erp_dashboard_3.webp", "/assets/building_material_digitalization.webp", "/assets/logistics_fleet_tracking.webp", "/assets/warehouse_automation_robotics.webp"],
     features: ["GEO Optimization", "Logistics AI", "Scalable Catalog"]
   },
   {
@@ -208,8 +209,32 @@ export const webProjects = [
     desc: "Developed and optimized a modern platform implementing AI-driven SEO strategies to rank among the top results for 'Best Civil Engineer in Beed', showcasing portfolios and company achievements.",
     icon: "📐",
     link: "https://rbeaassociates.com/",
-    trail: ["/assets/civil_engineering_modernization.webp", "/assets/bridge_3d_render_monitor.webp", "/assets/civil_ar_site_view.webp"],
+    trail: ["/rbea_associates_civil_engineering.webp","/rbea_associates_portfolio_1.webp","/rbea_associates_portfolio_2.webp","/rbea_associates_portfolio_3.webp","/rbea_associates_portfolio_4.webp","/rbea_associates_portfolio_5.webp", "/assets/civil_engineering_modernization.webp", "/assets/bridge_3d_render_monitor.webp", "/assets/civil_ar_site_view.webp"],
     features: ["Semantic SEO", "Industry-Grade Stack", "Local Authority"]
+  },
+  {
+    title: "Om Sales Corporation",
+    desc: "A modern digital storefront for wholesale and retail grocery business. Features a comprehensive product catalog, bulk inquiry system, and optimized customer experience.",
+    icon: "🛒",
+    link: "https://om-sales-corporation.vercel.app/",
+    trail: ["/om_sales_corporation_grocery.webp", "/om_sales_grocery.webp", "/om_sales_wholesale.webp"],
+    features: ["B2B & B2C", "Product Catalog", "Wholesale"]
+  },
+  {
+    title: "Kaalakariika",
+    desc: "A creative portfolio platform for a face designer and anime artist. Features a dynamic gallery, visually stunning interactions, and an immersive showcase of artistic work.",
+    icon: "🎨",
+    link: "https://tanmay0329.github.io/kaalakariika/",
+    trail: ["/kaalakariika_anime_artist_portfolio.webp", "/kaalakariika_anime.webp", "/kaalakariika_workspace.webp"],
+    features: ["Portfolio", "Dynamic Gallery", "Creative UI"]
+  },
+  {
+    title: "Premium Dry Fruits",
+    desc: "An elegant e-commerce landing page for premium dry fruits. Showcases product quality with a clean UI, smooth animations, and an optimized purchasing journey.",
+    icon: "🌰",
+    link: "https://dry-fruit-nine.vercel.app/",
+    trail: ["/premium_dry_fruits_ecommerce.webp", "/dry_fruits_bowl.webp", "/dry_fruits_packaging.webp"],
+    features: ["E-commerce", "Clean UI", "Product Showcase"]
   },
   {
     title: "Healthcare",
@@ -232,8 +257,39 @@ export const webProjects = [
     desc: "Developing a high-performance headless commerce solution as a part-time (hobby) project with PraiseArray (my startup). Focused on maximum conversion, ultra-fast edge delivery, and scalable microservices. Launching soon.",
     icon: "🛍️",
     link: "#",
-    trail: ["/assets/ecommerce_dashboard.webp", "/assets/ecommerce_dashboard.webp", "/assets/ecommerce_dashboard.webp"],
+    trail: ["/assets/ecommerce_dashboard.webp", "/assets/ecommerce_analytics_dashboard.webp", "/assets/ecommerce_storefront_ui.webp", "/assets/ecommerce_architecture.webp"],
     status: "LAUNCHING SOON",
     features: ["Headless Commerce", "ppraise collab", "Edge Performance"]
+  },
+];
+
+export const experience = [
+  {
+    role: "Founder — PraiseArray",
+    company: "AI Startup Initiative",
+    duration: "2024 – Present",
+    description: "Founded and leading PraiseArray, focusing on headless commerce and high-performance AI solutions. Managing product strategy, technical architecture, and strategic growth.",
+    year: "2025"
+  },
+  {
+    role: "Perception & Simulation Lead",
+    company: "Team BRACT — DD ROBOCON India",
+    duration: "2024 – 2025",
+    description: "Led the perception and simulation-to-hardware pipeline for AIR 3 ranking team. Integrated YOLOv5/v8, ROS, and AR for real-time strategic alignment and autonomous navigation.",
+    year: "2025"
+  },
+  {
+    role: "AI Technical Lead Intern",
+    company: "Robotics & AI Lab",
+    duration: "2024 – Present",
+    description: "Spearheading development of RT-IRAS (Intelligent Teaching Reference Augmentation System). Patent pending for accent-aware speech recognition and GenAI integration.",
+    year: "2024"
+  },
+  {
+    role: "Campus Ambassador",
+    company: "International Model United Nations (IMUN)",
+    duration: "2023 – 2024",
+    description: "Drove student engagement and managed outreach for international conferences, enhancing professional networking and leadership within the student community.",
+    year: "2023"
   }
 ];

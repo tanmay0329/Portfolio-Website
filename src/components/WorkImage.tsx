@@ -21,14 +21,15 @@ const WorkImage = (props: Props) => {
     }
   };
 
+  const Component = props.link ? "a" : "div";
+
   return (
     <div className="work-image">
-      <a
+      <Component
         className="work-image-in"
-        href={props.link}
+        {...(props.link ? { href: props.link, target: "_blank" } : {})}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={() => setIsVideo(false)}
-        target="_blank"
         data-cursor={"disable"}
       >
         {props.link && (
@@ -38,7 +39,7 @@ const WorkImage = (props: Props) => {
         )}
         <img src={props.image} alt={props.alt ? `${props.alt} - Project Showcase` : "Portfolio Project Showcase"} loading="lazy" decoding="async" />
         {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
-      </a>
+      </Component>
     </div>
   );
 };

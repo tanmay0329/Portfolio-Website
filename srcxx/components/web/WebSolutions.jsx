@@ -143,12 +143,15 @@ const WebSolutions = () => {
                 rel="noopener noreferrer"
                 className="category-card group"
               >
-                <div className="category-icon-wrapper">
-                  <div className="category-icon">
-                    <span role="img" aria-label="icon">{project.icon}</span>
-                  </div>
+                <div className="w-full h-48 mb-6 rounded-xl overflow-hidden relative border border-white/10 shadow-lg">
+                  <img 
+                    src={project.trail[0]} 
+                    alt={`${project.title} preview`}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                  />
                   {project.status && (
-                    <span className="absolute top-0 right-0 px-3 py-1 bg-amber-500 text-black text-[10px] font-black rounded-md tracking-tighter shadow-lg">
+                    <span className="absolute top-3 right-3 px-3 py-1 bg-amber-500 text-black text-[10px] font-black rounded-md tracking-tighter shadow-lg z-10">
                       {project.status}
                     </span>
                   )}
