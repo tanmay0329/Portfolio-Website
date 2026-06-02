@@ -61,16 +61,16 @@ const Landing = ({ children }: PropsWithChildren) => {
                 </div>
                 <div>
                   <h3 className="text-4xl sm:text-5xl font-black gradient-text tracking-tighter">Tanmay Bora</h3>
-                  <p className="text-xl text-gray-400 font-medium tracking-wide">Final Year CSE (AI)</p>
+                  <p className="text-xl text-gray-400 font-medium tracking-wide">CSE (AI) Graduate</p>
                 </div>
               </div>
 
               <p className="text-gray-300 leading-relaxed text-lg sm:text-xl mb-8 font-medium">
                 I'm a{" "}
                 <span className="gradient-text font-extrabold">
-                  Final year CSE (AI) student
+                  CSE (AI) Graduate
                 </span>{" "}
-                at VIT Pune, passionate about AI, Robotics, and building
+                from VIT Pune, passionate about AI, Robotics, and building
                 intelligent systems that solve real-world problems.
               </p>
 

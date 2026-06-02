@@ -115,7 +115,13 @@ const Achievements = () => {
                   <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-purple-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   
                   <div className="flex items-start gap-4">
-                    <div className="text-3xl">{achievement.icon}</div>
+                    {achievement.thumbnail ? (
+                      <div className="w-16 h-16 shrink-0 rounded-lg overflow-hidden border border-purple-500/30 shadow-[0_0_15px_rgba(168,85,247,0.3)]">
+                        <img src={achievement.thumbnail} alt={achievement.title} className="w-full h-full object-cover" />
+                      </div>
+                    ) : (
+                      <div className="text-3xl">{achievement.icon}</div>
+                    )}
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-white mb-1">
                         {achievement.title}

@@ -362,7 +362,7 @@ const About = () => {
                         Tanmay Bora
                       </h3>
                       <p className="text-sm text-gray-400">
-                        Final Year CSE (AI)
+                        CSE (AI) Graduate
                       </p>
                     </div>
                   </div>
@@ -370,9 +370,9 @@ const About = () => {
                   <p className="text-gray-300 leading-relaxed text-base sm:text-lg mb-6">
                     I'm a{" "}
                     <span className="gradient-text font-semibold">
-                      Final year CSE (AI) student
+                      CSE (AI) Graduate
                     </span>{" "}
-                    at VIT Pune, passionate about AI, Robotics, and building
+                    from VIT Pune, passionate about AI, Robotics, and building
                     intelligent systems that solve real-world problems.
                   </p>
 

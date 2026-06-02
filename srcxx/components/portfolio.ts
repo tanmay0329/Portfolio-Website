@@ -24,6 +24,14 @@ export const education = [
 
 export const achievements = [
   {
+    title: "Best Outgoing Student Award",
+    description: "Honored with the Best Outgoing Student Award for exceptional all-round performance. Recognized for impactful contributions across technical publications, securing top national competition rankings, and demonstrating dedicated leadership as both Class Representative (CR) and Department Representative (DR).",
+    link: "/best outgoing award.mp4",
+    icon: "trophy",
+    date: "2026",
+    thumbnail: "/DSC_9663.jpg"
+  },
+  {
     title: "Featured in MathWorks Student Lounge 2025",
     description: "Featured in the MathWorks Student Lounge (Dec 15, 2025) for leading the perception and simulation-to-hardware pipeline for Team BRACT at DD ROBOCON India 2025 using Simulink, ROS, and Computer Vision Toolboxes.",
     link: "https://blogs.mathworks.com/student-lounge/2025/12/15/dd-robocon-india-2025-mathworks-modeling-award-from-simulation-to-the-real-world-with-bracts-vit-pune/",
