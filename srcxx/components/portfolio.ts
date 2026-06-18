@@ -197,6 +197,30 @@ export const certifications = [
 
 export const webProjects = [
   {
+    title: "Sun Fitness (Gym Website)",
+    desc: "A premium, modern fitness and gym website featuring interactive sections for training, nutrition, and membership. Fully responsive for both mobile and desktop views.",
+    icon: "🏋️‍♂️",
+    link: "https://sunfitness.com/",
+    trail: ["/assets/gym_killer.png", "/assets/sunfitness_bag.png", "/assets/gym_trainer.png", "/assets/gym_transformation.png", "/assets/gym-logo.png", "/assets/cafeteria_supplements.png","assets/ezgif-frame-001.jpg"],
+    features: ["Next.js", "Tailwind CSS", "Responsive Design"]
+  },
+  {
+    title: "Alane Hospital",
+    desc: "A comprehensive digital platform for Alane Hospital, featuring luxurious UI, patient reviews, and detailed surgery service pages. Built for an optimal healthcare user experience.",
+    icon: "🏥",
+    link: "http://alane-hospital.vercel.app/",
+    trail: ["/assets/alanehospital-exterior.png", "/assets/alanehospital-clinic.png", "/assets/alanehospital-surgery.png", "/assets/alanehospital-logo.png"],
+    features: ["Next.js", "Healthcare UX", "Responsive Design"]
+  },
+  {
+    title: "JK Laser",
+    desc: "A professional business website for JK Laser, showcasing their precision laser cutting services, facades, and custom metal works. Built with Next.js and optimized for performance.",
+    icon: "⚡",
+    link: "https://jk-laser.vercel.app/",
+    trail: ["/assets/jk-laser-banner.png", "/assets/jk-laser_cutting.png", "/assets/jk-laser_facade.png", "/assets/jk-laser-logo.png"],
+    features: ["Next.js", "Tailwind CSS", "Business Portfolio"]
+  },
+  {
     title: "Service Provider Shop",
     desc: "Developed a full-stack service provider management platform with dynamic admin-controlled pricing, real-time slot scheduling, booking management, customer analytics, payment tracking, and automated operational workflows.",
     icon: "🔧",
